@@ -1,0 +1,3569 @@
+website- static, it has not user intraction-UI
+web Application -it has user intraction
+==================================================================
+2 type of software work:
+=========================
+1) service based:
+=================
+	they work for other.ex:Wipro
+	work less.
+	salery less.
+
+2)Product based:
+================
+	They are work for own product.ex: gpay,fb,insta,paytm,Zoho....
+	heavy work.
+	salery high.
+	
+=====================================================================
+End of the day they are work under some project.
+
+process:
+========
+	project-follow some process-it is called software development lifecycle.
+======================================================================
+
+process:ex:Service based company
+--------
+1)Requirement:
+--------------
+	business analyst
+
+2)Feasability study:
+====================
+	BA,CTO,HR,CEO,finance
+
+3)Design--UI/UX
+---------------
+BA-DOCUMENT----convert into image format.
+LOW Level
+HIGH level----whole house blue print
+
+4)Developers:
+=============
+	1)FED
+	2)BED
+	3)DB
+
+5)Tester:
+=========
+
+========================================================================================================================
+
+
+Scripting language:
+-----------------------
+	used to build website, web application.scripting language that need to be 
+translated into a different before they run.
+	1)Translated.
+	2)cannot be converted into executable file.
+=========================================================================================================
+
+PYTHON -user friendly language.
+
+server side scripting language.used create dynamic web application,high level
+interpreted(line-by-line execute) programming language and support OOPS.
+
+OOPS-object oriented programming language.
+
+a={
+    name:"tamil",
+    key:"value"
+	}
+===================================================================
+
+ex:
+a=10
+print(a)
+
+binary code---0 and 1.
+==============================================
+Compiler:
+---------
+	code convert into machine code(binary code)
+	code--->compiler-->convert into machine code-->interpretor run.
+
+Interpretor:(it read only binary code (machine code)
+------------
+	it a machine code line by line.
+===============================================
+C---->procedure oriented programming
+
+java,python,c#,c++---->OOPs
+================================================
+
+Features:
+---------
+	1)Easy to learn
+	2)Interpretor language----easy to debug
+	3)Cross platform----window,linux,mac (operating system)access
+	4)open source-free for everyone.
+	5)Community support--ERROR
+	6)support OOPs
+	7)Large standard libraray---->import ......
+		pip--->pypi.org-->package installer for python.
+	8)web application-DJango/flask
+	  mobile-kiwi
+	  desktop-Tkinter
+	  Testing-selenium
+========================================================
+
+PYTHON:
+=======	
+History:
+---------
+	guido von rossam---->Father of python
+
+1989--develop--->1991--->version 0.9
+1994--version 1.0,2000-->version 2.0
+2008-->version 3.0
+
+python----name:
+===============
+christmas holiday----internship project
+Tv-mondy python circus---->logo
+
+========================================================
+python ----version 2:
+========================
+1) print "hello world!"
+2) raw_input()
+3) xrange()
+4) 10/4---->output 2
+   20/4---->output 5
+
+
+python ----version 3:
+========================
+1) print ("hello world!")
+2) input()
+3) range()
+4) 10/4---->output 2.5
+   20/4---->output 5.0
+
+ex:a=10
+   print(A)------wrong
+===========================================================
+
+IDE---->integrated developement envinronment---->
+	pycharm,vs code,spyder,notepad,anaconda
+============================================================
+
+file extension:
+---------------
+main.py
+-----------------------------------------------------------
+print('hello world')
+-----------------------------------------------------------
+
+Variables:
+=========
+	used as a container to store a value. variable can be changed.
+
+syntax: variablename=value
+a=10
+======================================================================
+concatenate:
+=============
+string+string=====>stringstring
+String,String=====>string string
+string,number=====>string number
+string+number=====>error
+number,string
+number(,+)number
+
+ex:
+
+a=10
+b=11
+print("a+b=",(a+b))----->a+b= 21
+======================================================
+type is keyword used to find the datatype.it return datatype in class format.
+======================================================
+
+Token:
+======
+keyword:
+---------
+	lower case except True or False. special reserved word, that have specific meaning and purpose.
+it cannot be used for any other purpose.case sensitive.
+ex:
+---
+	Name-----name (different)
+==============================================================
+
+identifiers
+----------
+	it is  used to identify a specific element, varible name, function name, class name.
+
+	*cannot start with (0-9) or symbol(./,:),except underscore.
+	*start with (a-z) and (A-Z) or (underscore) 
+	*cannot use reserved keywords.
+	*case sensitive.
+
+=========================================================================================================
+
+Literals:
+=========
+	kind of data that is given the value.
+	
+String:
+-------
+	used to enclosed with ""/''.(zero or more charactor) 
+
+number:
+------
+	int,float,complex----->2+5j----correct
+				2+5k----wrong
+
+Boolean:
+--------
+	True, False
+
+special Literals:
+-----------------
+	None---->a=None---->type(a)---->NoneType
+
+collections:
+------------
+	list,tuple,set,dictionary
+
+=========================================================================================
+
+Operators:
+----------
+	it is used in an expression to perform some operation.
+
+	variable is also called operands.
+========================================================================================
+
+Escape sequence:
+===============
+	these are some special string that has some purpose.
+
+1)\n---new line
+
+	a='surya\nvijay\nsanthosh\ntamil\npriya'
+	print(a)
+
+output:
+------
+surya
+vijay
+santhsoh
+tamil
+priya
+-----------------------------
+
+2)\\---single slash-----used to print a \. 
+
+ex:
+===
+a='surya\\\\'
+print(a)--------->surya\\
+
+---------------------------------
+3)\' and \"-----single or double quotes
+
+ex:
+----
+a="surya\"s"
+print(a)------>surya"s
+
+a="surya"s"
+print(a)------>syntax error
+-----------------------------------
+4)harizontal tab:
+=================
+a="surya\tvijay"
+print(a)------->surya	vijay
+------------------------------------
+5)vertical:
+===========
+
+===============================================================
+commend line: ctrl+/
+-----------
+#-----single line
+''' '''-----multiple line comment---docstring(document string)
+=================================================================
+
+Data Type:
+==========
+1)text-string--->str---"text"
+2)number--->int,float,complex
+3)boolean--->bool-->True,False
+4)None---->type--->NoneType
+====================================================================
+
+ex:
+---
+a="10"
+print(type(a))
+b=float(a)
+print(type(b))------correct
+
+a="tamil10"
+print(type(a))
+b=float(a)
+print(type(b))-----wrong
+========================================================================
+Type of operators:
+====================
+1)Arithmetric operator:
+-----------------------
++, -, /--float division, %-modulus, *, **, //---integer division
+
+
+ex:
+---
+
+a=7
+b=2
+print(a/b)--->output:3.5
+print(a//b)--->output:3
+print(a%b)---->output: return reminder
+
+=======================================================
+2)shorthand property:
+========================
+*=, +=, -=, %=, **=, /=, //=
+a=10
+a=5+a
+
+short:a+=5 <----> a=5+a
+
+==============================================
+3)comparision operator:
+------------------------
+	it will return True (or) False.
+
+=--->assigning operator
+-----------------------
+
+>, >=, <, <=, ==, !=
+
+===============================================
+
+4) Logical operator:
+---------------------
+and, or, not
+
+and:
+====
+T T-->T
+T F-->F
+F T-->F
+F F-->F
+
+or:
+----
+T T-->T
+T F-->T
+F T-->T
+F F-->F
+
+not:
+----
+T-->F
+F-->T
+
+=========================================================================
+ex:
+----
+a=10
+b=12
+c=False
+print((a>5) and (a>12))------>False
+print((a>5) or (a>12))------->True
+print( not c)---------------->True
+============================================================================
+ex:
+====
+a=True
+print(a+5>6<8==5 and 5>9)
+
+step:1+5
+     6>6----False
+     false<8----1<8----True
+     True==5----1==5----False
+     False and 5>9----False and False----False
+
+Ans:False
+=============================================================================
+Concatenate:
+=============
+print("a & b = ",a&b)------correct
+print("a & b = "+a&b)------wrong
+
+print("santhosh"+"surya")------correct----->santhoshsurya
+
+print("santhosh","surya")------correct----->santhosh surya
+
+
+=========================================================================
+Bitwise operator:
+------------------
+
+bitwise &
+-------------
+
+4---->100
+5---->101
+
+print(4 & 5)----->100---->4
+		  101---->5  bitwise &
+		 -------------
+		  100---->4
+		--------------
+ANS:
+====
+4
+
+=============================================
+bitwise |
+============
+
+4---->100
+5---->101
+
+print(4 | 5)----->100---->4
+		  101---->5  bitwise |
+		 -------------
+		  101---->5
+		--------------
+ANS:
+====
+5
+
+================================================
+
+bitwise XOR: ^
+================
+
+ ^ :
+=====
+T ^ T----F
+T ^ F----T
+F ^ T----T
+F ^ F----F
+
+
+
+ex:
+===
+
+4---->100
+5---->101
+
+print(4  ^  5)----->100---->4
+		    101---->5  bitwise ^ 
+		 -------------
+		    001---->1
+		--------------
+ANS:
+====
+1
+
+=================================================================================
+bitwise Not ~:
+================
+
+ ~ :
+====
+a=10----->10+1---->(11)----change into negative----->-11
+a=-10---->-10+1---->(-9)--change into positive----->+9
+
+print(~10)
+
+============================================================================
+
+>>----Right shift
+=====================
+
+4 >> 2
+
+4----->100
+remove lost 2 digit---->001----->ANS:1
+
+=======================================================================
+<<----Left shift
+=================
+
+4 << 2
+
+4----->100
+add lost two digit(0)---->10000--->ANS:16
+
+======================================================================
+
+programme:
+===========
+
+a=4
+b=5
+c=-10
+print("a & b = ",a&b)
+print("a | b = ",a|b)
+print("a ^ b = ",a^b)
+print(" ~ a = ",~a)
+print(" ~ b = ",~b)
+print(" ~ c = ",~c)
+print("a >> 2 ",a>>2)
+print("10 >> 2 ",10>>2)
+print("10 << 2 ",10<<2)
+print("4 >> 2",4>>2)
+print("4 << 2",4<<2)
+
+output:
+==========
+
+a & b =  4
+a | b =  5
+a ^ b =  1
+ ~ a =  -5
+ ~ b =  -6
+ ~ c =  9
+a >> 2=  1
+10 >> 2=  2
+10 << 2=  40
+4 >> 2= 1
+4 << 2= 16
+5 << 2= 20
+
+=====================================================
+
+binary:
+=======
+bin
+
+print(bin(5))----->ANS:101
+
+=====================================================
+
+primitive datatype:
+====================
+	it hold single value.
+
+reference datatype (or) non-primitive datatype:
+================================================
+	it hold multiple datatype (or) value.
+========================================================
+
+6)Membership operator:
+========================
+	return boolean value (True or False)---->in, not in
+
+ex:
+====
+in:
+===
+fruit="apple"
+print('p' in fruit)-------->True
+
+fruit="apple"
+print('i' in fruit)--------->False
+
+not in:
+========
+fruit="apple"
+print('p' not in fruit)-------->False
+
+fruit="apple"
+print('i' not in fruit)--------->True
+
+========================================================
+b=[1,2,3,4,5]
+print(2 in b)-------->True
+
+b=[1,2,3,4,5]
+print("2" in b)------->False
+=========================================================
+
+7)Identity operator:
+=====================
+	it return boolean values------>is, not is
+	it check only memory
+
+memory----->id
+==============
+a=1
+b=6
+c=a
+c=8
+a=9
+print(id(a))
+print(id(b))
+print(id(c))
+print(a,b,c)
+
+li=[1,2,3,4,"tamil"]
+li2=li
+li2=[1,2,3,4]
+print(id(li))
+print(id(li2))
+print(li,li2)
+
+output:
+=======
+
+140723486516264-------a
+140723486516168-------b
+140723486516232-------c
+9 6 8
+
+1759993025152--------li
+1759994410880--------li2
+[1, 2, 3, 4, 'tamil'] [1, 2, 3, 4]
+
+
+ex:
+====
+a=1
+b=6
+c=a
+
+print(id(a))
+print(id(b))
+print(id(c))
+
+print(a is b)
+print(a is c)
+
+output:
+========
+
+140723486516008
+140723486516168
+140723486516008
+
+False
+True
+
+ex:
+====
+
+
+li=[1,2,3,4,"tamil"]
+li2=li
+
+print(id(li))
+print(id(li2))
+print(li is li2)
+
+output:
+=======
+2729550828160
+2729550828160
+True
+======================================================================================
+8)special operator:
+=====================
+	.(dot), :(colon)----->slicing operator.
+
+===========================================================
+
+Length:---->len()
+=======
+a=10
+print(len(a))------->error
+
+primitive datatype----->we can see the length only string type
+non-primitive---------->all----->tuple,list
+
+
+===============================================================
+
+a=[1,2,3,4,9]----->index--->
+			    0th  position---1
+			    1st  position---2
+			    2nd  position---3
+			    3rd  position---4
+			    4th  position---9
+
+print(len(a))-------->5
+
+
+==================================================================
+
+ex:
+===
+
+length----->total digit
+index/position--->total digit-1
+
+
+a="tamil"-----a[position/index]
+   01234---->index-----> +ve start with 0-->start
+-5--->t
+-4--->a
+-3--->m
+-2--->i
+-1--->l----->index-----> -ve start with -1--->end
+       
+   12345---->length
+
+
+print(a[3])------> syntax:print(variablename[index/position])
+
+output:
+=======
+i---->position 3
+
+print(a[2])----m
+print(a[-2])---i
+
+print(a[-6])----IndexError: string index out of range
+
+================================================================================
+
+1)history of python?
+2)IDE?
+3)type of tokens?
+4)datatypes?
+5)write the programme for the output?
+	name: XXX
+	age:22
+	tamil:100
+	eng:100
+	maths:100
+	s.s:100
+	s:100
+
+	total:500
+	
+	and find average?
+6)(5 & 12) & (2 | 6)
+7)(54 | 6 & 5) | (21 & 9)
+8)True or false. if it is false give the reason?
+	1) a="name"
+	   a=12
+	   print(a)
+
+	2) b="kalai""tamil"
+	   print(b)
+9) a=10
+   b=2
+   print(a/b+a%1)
+10)5>>2 and 9<<3
+11)what is member ship operator give the example?
+12)explain identity?
+13)output: hello hello hello hello hi hi hi hi------write a code.
+14)how to find the datatype and explain?
+15)convert the a='154' to integer?
+
+==============================================================================================================
+ 
+Slicing:
+=========
+a="tamil"
+a[0:5:2]
+[start:stop:step]
+
+start----->include
+stop------>not include. ex:5---->4 stop
+step------>increment/decrement----->defalut value 1(optional)
+
+ex:
+===
+a="hello world"----->
+   012345678910
+-1==d    
+-2==l
+-3==r
+-4==o
+-5==w
+-6==space
+-7==o
+-8==l
+-9==l
+-10==e
+-11==h
+
+len(a)----->11	      
+
+ex:
+====
+
+a="hello world"----->
+   012345678910
+
+1)a[5]----space
+2)a[11]----error
+3)a[2]----l
+4)a[-10]----e
+5)a[1(start):7(end-6):1(add 1)]----ello w
+6)a[3:8]----lo wo
+7)a[4:9:2]----owr
+8)a[0:9:3]----hlw
+9)a[-5:-11:1]----worldhello world---error
+10)a[-5:-11(stop-->-10):-1]----w(space)olle
+11)a[1:]------->ello world
+12)a[:10]------>hello worl
+13)a[::]------->hello world
+
+====================================================================================
+
+user input:
+===========
+a=input("enter the value: ")
+
+ex:
+===
+a="123"
+print(type(int(a)))-------->int
+
+
+a="zzzz"
+print(type(int(a)))-------->error
+=====================================================================================
+
+Condition checking:
+===================
+if(condition/True):
+------------------------
+if(True):
+    print("hi")
+    print("hello")
+
+
+ex:
+======
+a=int(input("enter the number: "))
+print("Given number is ",a)
+
+if(a%5==0):
+    print("it is divisible by 5")
+else:
+    print("it is not divisible by 5")
+
+
+output:
+=======
+enter the number: 100
+Given number is  100
+it is divisible by 5
+
+
+=================================================================================================================
+
+program:
+========
+1)Even or odd?
+	ex:
+	input:15
+	output:odd number
+	
+	input:20
+	ouput:Even number
+
+2)which one is greater and which one is less?
+	ex:
+	input1:12
+	input2:14
+
+	output:input1 is less than input2 and input2 is greater than input1
+
+	ex:
+	input1:16
+	input2:14
+
+	output:input2 is less than input1 and input1 is greater than input2
+
+3)find +ve or -ve
+	input:-2
+	output:Negative
+
+4)Divisible by 9?
+	input:10
+	output:not divisible by 9
+
+5)Vote Eligible?
+	input:12
+	output:not eligible for vote
+	
+	input:19
+	output:eligible for vote
+
+6)find user is Male or Female
+	input:Male
+	ouput:user is Male
+
+7)Write a code?input 1 or 0
+	if user enter 0 output will be False
+	if user enter 1 output will be True
+
+8)if input is 1 (or) 10 (or) 2 (or) 8 (or) 3 output will be Favorite number
+  if input is 7 (or) 4 (or) 6 (or) 5 (or) 9 output will be not  Favorite number
+
+9)find the total and avarage of the 5 subject?
+
+10)write code?
+	ex:
+	input:python
+	output:n
+	
+	input:javascript
+	output:j
+
+===========================================================================================================================================
+
+1)a=int(input("enter the number: "))
+print("Given number is ", a)
+
+if(a%2==0):
+    print("Even")
+else:
+    print("odd")
+
+
+output:
+========
+enter the number: 11
+Given number is  11
+odd
+===============================================
+2)a=int(input("enter the 1st number: "))
+b=int(input("enter the 2nd number: "))
+print("Given 1st number is ", a)
+print("Given 2nd number is ", b)
+
+if(a>b):
+    print("a is greater than b")
+else:
+    print("b is greater than a")
+
+output:
+========
+enter the 1st number: 25
+enter the 2nd number: 56
+Given 1st number is  25
+Given 2nd number is  56
+b is greater than a
+
+===================================================
+
+3)a=int(input("enter the  number: "))
+
+print("Given  number is ", a)
+
+if(0>a):
+    print("a is -ve")
+else:
+    print("a is +ve")
+
+output:
+========
+
+enter the  number: -2
+Given  number is  -2
+a is -ve
+
+=======================================================
+5)a=int(input("enter the  age: "))
+
+print("Given  number is ", a)
+
+if(a>=18):
+    print("eligible for vote")
+else:
+    print("not eligible for vote")
+
+output:
+=======
+enter the  age: 12
+Given  number is  12
+not eligible for vote
+
+=========================================================
+extra ques:
+===========
+a=int(input("enter the  birth year: "))
+
+print("Given  year is ", a)
+b=2024-a
+print(b)
+if(b>=18):
+    print("eligible for vote")
+else:
+    print("not eligible for vote")
+
+
+output:
+========
+enter the  birth year: 1998
+Given  year is  1998
+26
+eligible for vote
+==========================================================
+6)a=input("enter the  Gender: ")
+if(a=="male"):
+	print("user is male")
+else:
+	print("user is female")
+
+===========================================================	
+
+7)a=input("enter the  0 or 1 number: ")
+
+print("Given  number is ", a)
+if(a=="0"):
+    print("False")
+else:
+    print("True")
+
+or
+===
+a=int(input("enter the  0 or 1 number: "))
+
+print("Given  number is ", a)
+if(a==0):
+    print("False")
+else:
+    print("True")
+
+output:
+========
+enter the  0 or 1 number: 0
+Given  number is  0
+False
+
+============================================================================================
+
+8)a=int(input("enter the number between 0 t0 10 : "))
+
+print("Given  number is ", a)
+if(a==1 or a==2 or a==3 or a==8 or a==10):
+    print("Favorite number")
+else:
+    print("Not a favorite number")
+
+output:
+=======
+enter the number between 0 t0 10 : 1
+Given  number is  1
+Favorite number
+
+================================================================================
+
+10)a=input("enter the name: ")
+
+print("Given  number is ", a)
+if(len(a)>=6):
+    print(a[0])
+else:
+    print(a[len(a)-1])
+    
+
+output:
+=======
+enter the name: vijay
+Given  number is  vijay
+y
+
+==================================================================================
+
+extra ques:
+===========
+a=int(input("enter the number: "))
+
+print("Given  number is ", a)
+if(a>0):
+    print("+ve")
+elif(a==0):
+    print("it its equal to zero")
+else:
+    print("-ve")
+
+
+output:
+=======
+enter the number: 0
+Given  number is  0
+it its equal to zero
+
+
+===============================================================================================
+
+
+PROGRAM:
+=========
+1)Enter the letter.find is vowel or not?
+2)Enter 2 number between 1-150 and find which one is nearest to 100.
+3)Find the Month day count?
+	ex:month 5
+	   output:31 days
+4)Enter week day and find the day name?
+	ex:day 1
+	   output:Sunday
+5)find the digit of the number?
+	ex:123
+	output:3 digit number
+===================================================================================================
+
+1)a=input("enter the letter")
+print("given letter is ",a)
+
+if(a in "aeiou"):
+    print("it is vowel")
+else:
+     print("it is not vowel")
+
+if(a=="a" or a=="e" or a=="i" or a=="o" or a=='u'):
+    print("it is vowel")
+else:
+     print("it is not vowel")
+
+========================================================
+2)
+a=int(input("enter the number1"))
+b=int(input("enter the number2"))
+print("given number is ",a,b)
+newnumber1=0
+newnumber2=0
+if(a>100):
+    newnumber1=a-100
+elif(a<100):
+    newnumber1=100-a
+    
+if(b>100):
+    newnumber2=b-100
+elif(b<100):
+    newnumber2=100-b
+
+if(newnumber1>newnumber2):
+    print(b,"is nearest to 100")
+elif(newnumber1==newnumber2):
+     print(a,b,"is nearest to 100")
+else:
+    print(a,"is nearest to 100")
+
+=========================================================================
+
+Nested if:
+==========
+Eligible for marriage program:
+===============================
+a=input("Enter the gender ")
+b=int(input("enter the age "))
+
+if(a=="male"):
+    print("he is male")
+    if(b>=21):
+        print("he is eligible for mrg")
+    else:
+         print("he is not eligible for mrg")
+elif(a=="female"):
+    print("she is female")
+    if(b>=18):
+        print("she is eligible for mrg")
+    else:
+         print("she is not eligible for mrg")
+else:
+    print("please enter valid name")
+
+
+output:
+=======
+Enter the gender female
+enter the age 17
+she is female
+she is not eligible for mrg
+
+==============================================================================
+LIST:
+======
+syntax:a=[1,2,3,4,5,"name"]
+
+list are used to store a multiple item in single variable.
+
+ex:
+====
+a=[1,2,3,4,"name"]
+b=a[4]----name
+print(b[1])----a
+print((a[4])[1])----a
+
+=====================================================================
+append:
+========
+a=[1,2,3,4,"name"]-------given
+a[2]="santhosh"----------update-----output--->[1,2,"santhosh,4,"name"]
+a.append("tamil")--------used to add a value in the list at the end.  // [1,2,"santhosh,4,"name","tamil"]
+a.insert(1(position),"vijay"(value))------used to insert a value in any position.--// [1,"vijay,"2,"santhosh,4,"name","tamil"]
+print(a)
+
+output:
+=======
+[1, 'vijay', 2, 'santhosh', 4, 'name', 'tamil']
+======================================================================
+ex: join 2 list
+====
+a=[1,2,3,4,5]
+b=[5,6,7,8,9,10]
+print(a)
+a.extend(b)
+print(a)
+
+it disturb original list.
+output:
+========
+[1, 2, 3, 4, 5]
+[1, 2, 3, 4, 5, 5, 6, 7, 8, 9, 10]
+
+=========================================================================
+a=[1,2,3,4,5]
+b=[5,6,7,8,9,10]
+print(a)
+a.clear()-------it clear the array return empty
+print(a)
+
+output:
+========
+[1, 2, 3, 4, 5]
+[]
+===================================================================
+pop:
+=====
+a=[1,2,3,4,5]
+b=[5,6,7,8,9,10]
+print(a)
+a.pop()----->without index value.it delete last position
+print(a)
+
+output:
+=======
+[1,2,3,4]
+
+a.pop(2(index))--------it delete a 2rd position value
+
+output:
+=======
+[1,2,4,5]
+
+====================================================================
+
+for(i in a):
+	print(i)
+
+ex:
+====
+
+a=[1,2,3,4,5]
+
+for i in a:
+	print(i)
+
+
+output:
+========
+1
+2
+3
+4
+5
+===================================================================
+
+1)input:any food name
+  output:I am hungry so i order foodname
+
+2)a="hello world"
+  output:HELLO WORLD
+
+3)a=134
+  find the memory address?
+
+4)a=10
+  print(a>0)
+
+5)5<<3 and 6>>4
+
+6)a=[1,2,3,4,5,6,7,8,9,10,"xxxx"]
+  if number is divisible by 2 then output will Even
+  if Number is not divisible by 2 the output will be odd
+  other wise output will be it is string.write code using loop.
+
+7)a=[h,a,r,i]
+  output:[h,a,r,i,n,i]
+
+8)a=[1,2,3,4,5]
+  output:[1,2,"watermelon",4,5]
+
+9)a=10
+  b=20
+  c=35
+  if(a && b>=20):
+	if(c>35):
+	    print("i am python")
+	elif(a):
+	    print("python")
+	else:
+	    print("java script")
+
+10)print 0 to 10 number in 2 line code?
+
+==================================================================================================================
+Program:
+=========
+
+a=[1,2,123,45,"XXX",246,533,34,97,8,"yyy",84,75]-----note that if any number divisible by both 2,3 (or) 4,5---->just ignore.
+
+if the number is divisible by 2 then output is particular number is divible by 2.
+ex:2 is divisible by 2.
+if the number is divisible by 3 then output  is particular number  is divible by 3.
+if the number is divisible by 5 then output is particular number is divible by 5.
+if the number is not divisible by 2,3,5 then output is particular number is not divible by 2,3,5.
+suppose it will be the text.pls remove the text from the list.
+
+output will be
+
+1 is not divible by 2,3,5.
+2 is divible by 2.
+123 is divible by 3.
+45 is divible by 3.
+246 is divible by 2. 
+533 is not divible by 2,3,5.
+34 is divible by 2.
+97 is not divible by 2,3,5.
+8 is divible by 2.
+84 is divible by 2.
+75 is divible by 3. 
+
+print(a)------>[1,2,123,45,246,533,34,97,8,84,75]
+
+======================================================================================================================
+
+program:
+=========
+1)a=[1,2,3,4,5]
+  Add the number from list.
+  output: 15
+
+2)a=[1,2,3,4,5,6,7,8].Find how many odd number and how many even number in the list?
+
+3)Cube the number.
+   ex:input:2
+      output:8
+
+4)find circle area--->circle area formula is πr2(pi r square).
+   input:4
+   output:50.27
+
+5)Get the height from user.
+  if given height is less than 150, output will be small.
+  if given height is greater than or equal 150 and height less than 165, output will be Average Height.
+  if given height is greater than or equal 165 and height less than 195, output will be  Taller.
+  otherwise output will be Abnormal height.
+
+6)get the name,rollnumber,tamil, eng, maths mark from user.
+  if 3 subject total is greater than 90, output will be First class.
+  if 3 subject total is greater than 80, output will be Second class.
+  if 3 subject total is greater than 60, output will be third class.
+  if 3 subject total is greater  than or equal to 35, output will be Avarage.
+  otherwise fail.
+
+7)Get the Temparature from user.
+  if tem greater than or equal to 0 and less than 10, output will be Very cold weather.
+  if tem greater than or equal to 10 and less than 20, output will be cold weather.
+  if tem greater than or equal to 20 and less than 30, output will be Normal Weather.
+  if tem greater than or equal to 30 and less than 40, output will be Hot.
+  otherwise Very hot.
+
+8)Nexted if:
+
+Get the Electrycity UNIT from user.
+  if unit is upto 199----charge is 1.20 Rs
+  if unit is 200 and above but less than 400----charge is 1.50 Rs
+  if unit is 400 and above but less than 600----charge is 1.80 Rs
+  if unit is 600 and above ----charge is 2.00 Rs.
+
+find bill.
+suppose bill exceed RS. 400 the subcharge of 15% will be charged and minimum bill be should be RS. 100
+
+ex:
+input unit:300
+output:3450
+
+=================================================================================================================== 
+  
+name="tamil"
+age=22
+doornumber=61
+print(f"my name is {name} and my age is {age}")---//my name is tamil and my age is 22
+
+================================================================================================
+Tuple:
+=======
+tuple item are ordered, unchangable, it allow duplicate value.it store multiple value not one value
+
+
+ex:
+====
+a=(1)----->print(type(a))----->int
+a=(1,2,3,4)------>print(type(a))----->tuple
+
+it cannot change tuple directly----->we change the tuble into list.
+
+ex:
+=== 
+
+a=(1,2,"tamil")
+print(a)
+print(type(a))
+b=list(a)
+print(b)
+b.append("priya")
+
+a=b
+print(tuple(a))
+=========================================================================================
+unpacking:
+==========
+we are also alllowed to extract the value back into variables.this is called unpacking
+
+ex:
+====
+a=(1,2,"tamil","santhosh","surya","vijay",2,3,4)
+print(a)
+print(type(a))
+(nu1,n5,*nu2,num3,num4)=a
+print(nu2)
+
+output:
+========
+['tamil', 'santhosh', 'surya', 'vijay', 2] 
+=======================================================================
+Merge 2 tuple:
+==============
+a=(1,2,"tamil")
+b=(1,2,3)
+print(a+b)
+print(a*2)
+
+output:
+========
+1) (1, 2, 'tamil', 1, 2, 3)
+2) (1, 2, 'tamil', 1, 2, 'tamil')
+=========================================================================
+a="raj-kumar"
+b=a.split("-")
+[firstname,secondname]=a.split("-")
+print(firstname,b,b[1])
+
+
+// raj ['raj', 'kumar'] kumar
+
+2)a="raj-kumar"
+b=a.split("-")
+[firstname,secondname]=a.split("-")
+print(firstname,secondname,b,b[0])
+
+//raj kumar ['raj', 'kumar'] raj
+
+===============================================================================
+Set:
+====
+a set is a collection which is unordered,unchangable, unindexed.does not allow dublicate value.suppose it have 2 same value, it take first one.
+
+ex:
+===
+a={"vijay",1,2,3,"tamil",3}
+print(a)
+
+
+output:
+========
+{1, 2, 3, 'vijay', 'tamil'}
+
+===========================================================================
+a={True,1,0,False,2,3,"tamil",3}
+print(a)
+
+output:
+========
+{0, True, 2, 3, 'tamil'}
+===============================================================================
+
++ operate does not support in set.
+
+ADD:it does not distrub original set
+====
+a={1,2,3,4,5}
+b={5,6,7,8,9}
+c=a.union(b)
+print(c)
+a.union(b)
+print(a)
+
+OUTPUT:
+=========
+{1, 2, 3, 4, 5, 6, 7, 8, 9}
+{1, 2, 3, 4, 5}
+======================================================================================
+
+update:it distrub original set
+========
+a={1,2,3,4,5}
+b={5,6,7,8,9}
+print(a.update(b))
+a.update(b)
+print(a)
+
+output:
+========
+None
+{1, 2, 3, 4, 5, 6, 7, 8, 9}
+
+================================================================================
+intersection:it does not distrub original set
+==============
+a={1,2,3,4,5}
+b={5,6,7,8,9}
+print(a.intersection(b))
+a.intersection(b)
+print(a)
+
+output:
+=======
+{5}
+{1, 2, 3, 4, 5}
+
+=================================================================================
+intersection_update:it distrub original set
+===================
+a={1,2,3,4,5}
+b={5,6,7,8,9}
+print(a.intersection_update(b))
+a.intersection_update(b)
+print(a)
+=====================================================================================
+how to check the datatype:
+==========================
+a="tamil"
+print(type(a))-----><class "str">
+
+
+print(isinstance(a,int))----->False
+==================================================================================
+
+dictionary:
+============
+ordered,changable,not allow duplicate value.
+
+ex:
+====
+a={
+    "name":"xxxx",
+    "age":21
+}
+print(type(a))
+
+output:
+=======
+<class 'dict'>
+====================================================================
+
+ex:
+=====
+a={
+    "name":"xxxx",
+    "age":21,
+     "age":22
+}
+print(a)
+
+output:
+========
+{'name': 'xxxx', 'age': 22}
+
+====================================================================================
+Update:
+=======
+a={
+    "name":"xxxx",
+    "age":21
+}
+print(a)
+a["name"]="yyyy"
+print(a)
+  
+output:
+=======
+{'name': 'xxxx', 'age': 21}
+{'name': 'yyyy', 'age': 21}   
+
+===============================================================================
+Add:
+=====
+a={
+    "name":"xxxx",
+    "age":21
+}
+print(a)
+a["name"]="yyyy"
+a["DOB"]='4/2/2001'
+print(a)
+
+output:
+========
+{'name': 'yyyy', 'age': 21}
+{'name': 'yyyy', 'age': 21, 'DOB': '4/2/2001'}
+
+==========================================================================
+ex:
+===
+a={
+    "name":"xxxx",
+    "age":21
+}
+
+print(a["name"])----------->xxxx
+print(a.values())---------->dict_values(['xxxx', 21, [1, 2, 3, 4]])
+print(a.keys())------------>dict_keys(['name', 'age', 'stu'])
+
+===========================================================================
+
+ex:
+====
+a={
+    "name":"xxxx",
+    "age":21,
+    'stu':[1,2,3,4]
+}
+
+print((a['stu'])[2])
+
+output:
+========
+3
+
+=================================================================
+
+a={
+    "name":"xxxx",
+    "age":21,
+    'stu':[1,2,3,4]
+}
+(a['stu'])[2]=5
+print(a)
+
+output:
+=======
+{'name': 'xxxx', 'age': 21, 'stu': [1, 2, 5, 4]}
+
+==================================================================
+ex:
+====
+a={
+    "name":"xxxx",
+    "age":21,
+    'stu':[1,2,3,4]
+}
+
+print(a.items())
+print(a)
+
+
+output:
+=======
+dict_items([('name', 'xxxx'), ('age', 21), ('stu', [1, 2, 3, 4])])
+{'name': 'xxxx', 'age': 21, 'stu': [1, 2, 3, 4]}
+
+=========================================================================
+Remove dictionary:
+===================
+a={
+    "name":"xxxx",
+    "age":21,
+    'stu':[1,2,3,4]
+}
+
+
+a.pop("name")-----it allow arguments.
+print(a)-------{'age': 21, 'stu': [1, 2, 3, 4]}
+============================================================
+
+a.popitem()------it does not allow arguments.it delete last item.
+print(a)---------{'name': 'xxxx', 'age': 21}
+============================================================
+a={
+    "name":"xxxx",
+    "age":21,
+    'stu':[1,2,3,4]
+}
+print(a)
+del a-------structure also will be deleted.
+print(a)------error.a is not defined
+
+output:
+=======
+{'name': 'xxxx', 'age': 21, 'stu': [1, 2, 3, 4]}
+Traceback (most recent call last):
+  File "e:\OT\1) 9AM-29-JAN-python\Python\main.py", line 8, in <module>
+    print(a)
+          ^
+NameError: name 'a' is not defined
+============================================================
+a={
+    "name":"xxxx",
+    "age":21,
+    'stu':[1,2,3,4]
+}
+print(a)
+a.clear()------>only delete the datas.not a structure.
+print(a)
+==================================================================
+
+1) How do you access the second element in a list [5, 10, 15, 20]?
+2) Retrieve the value associated with the key 'city' in the dictionary {'name': 'Emma', 'city': 'London', 'age': 30}.
+3) How do you access the last element of a tuple (7, 14, 21, 28)?
+4) Given a set {50, 100, 150, 200}, how can you retrieve the third element?
+5) How do you slice a list [1, 2, 3, 4, 5, 6] to get [3, 4, 5]?
+6) In a dictionary {'x': 10, 'y': 20, 'z': 30}, how do you retrieve the value associated with the key 'y'?
+7) Retrieve the first two elements of the tuple (11, 22, 33, 44, 55).
+8) How do you get the length of a list [10, 20, 30, 40, 50]?
+9) Access the second-to-last value in the tuple (100, 200, 300, 400, 500).
+10) Given the set {1, 2, 3, 4, 5}, how do you check if the value 3 exists?
+11) Retrieve the key-value pair at position 2 from the dictionary {'a': 1, 'b': 2, 'c': 3, 'd': 4}.
+12) How do you reverse a list [10, 20, 30, 40]?
+13) Extract the first three elements of the tuple (5, 10, 15, 20, 25, 30).
+14) Retrieve every alternate element from the list [2, 4, 6, 8, 10, 12].
+15) In the dictionary {'apple': 1, 'banana': 2, 'cherry': 3}, how do you get the list of all keys?
+16) How do you add the number 6 to the set {1, 2, 3, 4, 5}?
+17) Given the tuple (50, 60, 70, 80), how do you find the index of the value 70?
+18) How do you count the occurrences of 2 in the list [1, 2, 2, 3, 4, 2]?
+19) Retrieve the value of the key 'age' from the dictionary {'name': 'Sophia', 'age': 27, 'city': 'Paris'}.
+20) Convert the set {10, 20, 30, 40} to a list and access the first element.
+
+===================================================================================================================
+LOOP:
+======
+for:
+====
+for i in range(1,6,1):
+    print(i,end="")
+
+output:
+========
+12345
+
+=========================================================
+for i in range(1,6,1):
+    print(i)
+
+output:
+=======
+1
+2
+3
+4
+5
+==========================================================
+for i in range(1,101,1):
+    if(i%2==0):
+        print("it is even", i)
+    else:
+        print("odd", i)
+
+===========================================================
+
+Vowel:
+======
+
+
+name=input("Enter the name: ")
+
+
+
+for i in range(0,len(name),1):
+
+    if(name[i]=="a" or name[i]=="e" or name[i]=="i" or name[i]=="o" or name[i]=="u"):
+
+        print(name[i],"is vowel")
+    
+    else:
+        
+        print(name[i],"is not a vowel")
+ 
+
+//
+Enter the name: rajkumar
+r is not a vowel
+a is vowel
+j is not a vowel
+k is not a vowel
+u is vowel
+m is not a vowel
+a is vowel
+r is not a vowel
+
+
+====================================================================  
+
+vowel count:
+============
+name=input("Enter the name: ")
+count=0
+for i in range(0,len(name),1):
+
+    if(name[i]=="a" or name[i]=="e" or name[i]=="i" or name[i]=="o" or name[i]=="u"):
+        count=count+1
+        print(name[i],"is vowel")
+       
+    
+    else:
+        
+        print(name[i],"is not a vowel")
+ 
+print("vowel count = ",count)
+
+===============================================================================  
+
+1) print 1-50 numbers
+2) print 1-25 numbers, condition--if it is divisible by 5, print opps!, otherwise print number.
+3) print your name, single letters
+4) print the numbers, user entered.
+5) print your name reverse
+6) add number, for example user enter 5, need to add 1 to 5 numbers
+7) students = [
+    {"name": "Alice", "age": 20},
+    {"name": "Bob", "age": 22},
+    {"name": "Charlie", "age": 13}
+]----find the person eligible for vote or not
+
+8)employees = [
+    {"name": "John", "salary": 5000},
+    {"name": "Jane", "salary": 7000},
+    {"name": "Mike", "salary": 4000}
+]---find who is earn user entered salary or above, for example user enter 5000, output is john, jane
+
+9)voters = [
+    {"name": "Alice", "gender": "female", "age": 20, "votes": 3},
+    {"name": "Bob", "gender": "male", "age": 17, "votes": 5},
+    {"name": "Charlie", "gender": "male", "age": 25, "votes": 2},
+    {"name": "Diana", "gender": "female", "age": 16, "votes": 4},
+    {"name": "Edward", "gender": "male", "age": 30, "votes": 1}
+]----------- display the total vote of male and female, if they are eligible.
+=========================================================================================  
+   
+
+pattern:
+=========
+
+1)
+
+for i in range(1,5,1):
+   for j in range(1,5):
+       print("* ",end="")
+   print(" ")
+
+output:
+========
+* * * *
+* * * *
+* * * *
+* * * *
+
+==================================================================================================================================================
+
+only vowel's
+=============
+
+name=input("Enter the name: ")
+
+vowel=[]
+
+
+
+for i in range(0,len(name),1):
+
+    if(name[i]=="a" or name[i]=="e" or name[i]=="i" or name[i]=="o" or name[i]=="u"):
+
+        if(name[i] not in vowel):
+
+            vowel.append(name[i])
+
+
+for i in range(0,len(vowel),1):
+    print(vowel[i]," is vowel")
+
+
+// Enter the name: rajkumar
+a  is vowel
+u  is vowel
+====================================================================================================================================================
+
+another Type:
+
+============
+name=input("Enter the name: ")
+
+vowel=[]
+
+
+
+for i in range(0,len(name),1):
+
+    if(name[i]=="a" or name[i]=="e" or name[i]=="i" or name[i]=="o" or name[i]=="u"):
+
+        if(name[i] not in vowel):
+
+            vowel.append(name[i])
+
+
+
+            print(name[i]," is vowel")
+
+// Enter the name: rajkumar
+a  is vowel
+u  is vowel
+
+===========================================================================================================================================================
+
+2)user get value:
+===================
+a=int(input("enter the number which you want a loop: "))
+b=input("enter the symbol: ")
+
+for i in range(a):
+   for j in range(a):
+       print(b,"",end='')
+   print(" ")
+
+
+output:
+=======
+enter the number which you want a loop: 10
+enter the symbol: #
+
+# # # # # # # # # #  
+# # # # # # # # # #
+# # # # # # # # # #
+# # # # # # # # # #
+# # # # # # # # # #
+# # # # # # # # # #
+# # # # # # # # # #
+# # # # # # # # # #
+# # # # # # # # # #
+# # # # # # # # # #
+
+==============================================================
+program:
+========
+a=[{
+    "name":"tamil",
+    "age":21
+},
+   {
+       "name":"santhosh",
+       "age":20
+   }]
+
+print((a[0])["name"])
+
+output:
+========
+tamil
+
+======================================================================
+1)
+a=[{"name":"tamil","age":20},{"name":"anbu","age":21}]
+
+for i in range(len(a)):
+	print(a[i]["name"],a[i]["age"])
+
+output:
+========
+tamil 20
+anbu  21
+	
+=====================================================================
+2)
+a=[{"name":"tamil","age":20},{"name":"anbu","age":21}]
+
+for i in range(len(a)):
+    if(i%2==0):
+    	print(a[i]["name"],a[i]["age"])
+
+output:
+=======
+tamil 20
+====================================================================
+Eligible for vote:
+========================
+a= [
+    {"name": "Alice", "age": 20},
+    {"name": "Bob", "age": 22},
+    {"name": "Charlie", "age": 13}
+]
+
+ANS:
+====
+
+for i in range(len(a)):
+    if(a[i]["age"]>=18):
+	    print(a[i]["name"]," is eligible for vote")
+    else:
+	    print(a[i]["name"]," is not eligible for vote")
+
+========================================================================
+Get a List From User
+========================
+
+
+a=int(input("enter the list length: "))
+
+print(a)
+b=[]
+
+for i in range(a):
+
+    c=int(input(f"enter the list {i+1} element: "))
+    
+    b.append(c)
+
+
+print(b)
+
+
+//enter the list length: 5
+5
+enter the list 1 element: 1
+enter the list 2 element: 2
+enter the list 3 element: 3
+enter the list 4 element: 4
+enter the list 5 element: 5
+[1, 2, 3, 4, 5]
+
+=================================================================
+using list -----find marriage eligibility:
+===========================================
+
+information=[
+{
+  "name":"santhosh kumar", 
+  "age":21,
+  "gender":"male"
+},
+{
+  "name":"vijay",
+  "age":23,
+  "gender":"male"
+},
+{
+  "name":"suriya",
+  "age":24,
+  "gender":"male"
+},
+{
+  "name":"vishwa",
+  "age":21,
+  "gender":"male"
+},
+{
+    "name":"tamil",
+    "age":23,
+    "gender":"female"
+}
+]
+for i in range(len(information)):
+    if(information[i]["gender"]=="male"):
+        if(information[i]["age"]>21):
+            print(information[i]["name"]," eligible for marriage")
+        else:
+            print(information[i]["name"]," not eligible for marriage")
+
+    elif(information[i]["gender"]=="female"):
+        if(information[i]["age"]>18):
+            print(information[i]["name"]," eligible for marriage")
+        else:
+            print(information[i]["name"],"eligible for marriage")
+
+    else:
+        print(" please enter valid gender ")
+
+
+
+output:
+========
+santhosh kumar  not eligible for marriage
+vijay  eligible for marriage
+suriya  eligible for marriage
+vishwa  not eligible for marriage
+tamil  eligible for marriage
+
+
+
+======================================================================
+
+pattern:
+=========
+for i in range(5):
+	for j in range(i):
+		print("* ",end="")
+	print(" ")
+
+
+
+OUTPUT:
+=======
+*
+* *
+* * *
+* * * *
+* * * * *
+===================================================================================
+
+for i in range(5,0,-1):
+
+    for j in range(i):
+
+	    print("* ",end="")
+    
+print(" ")
+
+output:
+==========
+* * * * *  
+* * * *  
+* * *  
+* *  
+*  
+
+
+========================================================================================
+
+
+a=int(input("enter the value: "))
+for i in range(a):
+	for j in range(a,i+1,-1):
+		print(" ",end=" ")
+	for k in range(0,i+1,1):
+		print("*  ",end=" ")
+	print(" ")
+
+
+//enter the value: 5
+        *    
+      *   *    
+    *   *   *    
+  *   *   *   *    
+*   *   *   *   *    
+
+
+=========================================================================================
+ask 1: Print Patterns  
+Write a program using nested loops to print the following pattern:  
+*  
+* *  
+* * *  
+* * * *  
+* * * * *  
+
+Task 2: Number Pyramid  
+Use nested loops to generate this pattern:  
+1  
+1 2  
+1 2 3  
+1 2 3 4  
+
+Task 3: Square Matrix  
+Print a 4x4 matrix of numbers using nested loops:  
+1 1 1 1  
+2 2 2 2  
+3 3 3 3  
+4 4 4 4  
+
+Task 4: Table of Multiplication  
+Generate a multiplication table for numbers 1 to 5 using nested loops:  
+1 x 1 = 1  
+1 x 2 = 2  
+...  
+5 x 5 = 25  
+
+Task 5: Matrix Addition  
+Write a program to add two 2D matrices using nested loops.
+
+Task 6: Transpose of a Matrix  
+Use nested loops to compute the transpose of a 3x3 matrix.
+
+Task 7: Triangle Pattern  
+Print this pattern:  
+    *  
+   *  
+  ***  
+ ***  
+
+Task 8: Count Combinations  
+Use nested loops to print all combinations of two dice rolls (1-6) and count how many combinations sum to 7.
+
+Task 9: Prime Numbers Grid  
+Generate all prime numbers up to 50 and display them in a grid format using nested loops.
+
+Task 10: Pascal's Triangle  
+Write a program to generate Pascal's Triangle using nested loops:  
+   1  
+  1 1  
+ 1 2 1  
+1 3 3 1
+
+=========================================================================================================================
+
+task 8:
+========
+
+(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)
+(2,1)(2,2)(2,3)(2,4)(2,5)(2,6)
+(3,1)(3,2)(3,3)(3,4)(3,5)(3,6)
+(4,1)(4,2)(4,3)(4,4)(4,5)(4,6)
+(5,1)(5,2)(5,3)(5,4)(5,5)(5,6)
+(6,1)(6,2)(6,3)(6,4)(6,5)(6,6)
+
+count=0
+
+for i in range(1,7):
+	for j in range(1,7):
+		if(i+j==7):
+		   count=count+1
+
+
+print(count)
+
+output:
+=======
+count=0
+
+for  i=1:
+---------
+for j=1
+    if(1+1)
+for j=2
+    if(1+2)
+for j=3
+    if(1+3)
+for j=4
+    if(1+4)
+for j=5
+    if(1+5)
+for j=6
+    if(1+6)
+    count=1
+
+
+for  i=2:
+---------
+for j=1
+    if(2+1)
+for j=2
+    if(2+2)
+for j=3
+    if(2+3)
+for j=4
+    if(2+4)
+for j=5
+    if(2+5)
+    count=2
+for j=6
+    if(2+6)
+   
+
+similarly......
+
+output: 6
+===============================================================================================================
+ 			
+task 9:
+========
+
+count=0
+for i in range(1,51):
+	isDivide=False
+	for j in range(2,i):
+		if(i%j==0):
+		    isDivide=True
+		    break
+	if(not isDivide):
+	    count=count+1
+	    print(i," is a prime number")
+
+
+print(count)
+for i=1
+========
+isDivide=false
+for j=2:
+--------
+    		   
+==================================================================================================================================================
+declare
+while condition:
+	while statement
+	increment/decrement
+=====================================================
+a=0
+while a<=5:
+	print(a)
+	a=a+1
+
+
+output:
+=======
+a=0
+0<=5----true
+0
+a=0+1=1
+
+1<=5----true
+1
+a=1+1=2
+
+2<=5----true
+2
+a=2+1=3
+
+3<=5----true
+3
+a=3+1=4
+
+4<=5----true
+4
+a=4+1=5
+
+5<=5----true
+5
+a=5+1=6
+
+
+6<=5----false
+
+
+=======================================================
+	
+PALINDROME:
+============
+a=int(input('enter the number'))
+tem=a
+c=0
+
+while a>0:
+	b=a%10
+	a=int(a/10)
+	c=c*10+b
+if c==tem:
+	print("palindrome")
+else:
+	print("not a palindrome")
+
+output:
+========
+ex:a=123
+tem=123
+c=0
+
+1)b=123%10---->b=3
+  a=int(123/10)----->a=int(12.3)---->a=12
+  c=0*10+3---->c=0+3---->c=3
+
+2)b=12%10---->b=2
+  a=int(12/10)---->a=int(1.2)---->a=1
+  c=3*10+2---->c=30+2---->c=32
+
+3)b=1%10---->b=1
+  a=int(1/10)----->a=int(0.1)---->a=0
+  c=32*10+1---->c=320+1---->321
+
+4)c==tem
+  321==123---->false
+========================================================================================
+string palindrome:
+===================
+a=input('enter the name ')
+palin=True
+
+srini---inirs
+
+mom--mom
+
+malayalam
+
+
+for i in range(0,len(a)):
+   print(a[i],a[len(a)-1])
+   if(a[i]!=a[(len(a)-1)-i]):
+       palin=False
+       break
+if(palin):
+    print('palindrome')
+else:
+    print('not a palindrome')
+
+output:
+=======
+
+mom---length 3
+
+a[0]==a[2]
+a[1]==a[1]
+
+a[0]==a[2-i]
+a[1]==a[1-i]
+===========================================================
+
+2)
+
+a=int(input("enter the number: "))
+for i in range(1,a,1):
+	for j in range(a,i,-1):
+		print("* ",end="")
+	for k in range(1,i+1,1):
+		print("*  ")
+	print(" ")
+
+=============================================================
+FUNCTION:
+=========
+block of code.its only run when it called. You can pass data, known as parameters, into a function.
+
+syntax:
+========
+def function_name():
+	print("hello world")
+function_name()
+
+=================================================================
+
+
+
+def function_name():
+
+	print("hello world")
+
+	return "hi"
+	
+
+
+print(function_name())
+	
+
+
+// hello wold
+   hi------------> without return the function return None
+=========================================================================
+
+def add(a,b,*c):-------parameter
+
+    print(a,b,c)
+
+    return a+b
+
+
+add(7,8,6,4,3,2)-------calling(argument)
+
+
+print(add(7,8,6,4,3,2))
+	
+==================================================================================
+def demo():
+    print("hello")
+print(type(demo))---------><class 'function'>
+
+==================================================================
+def demo():
+    print("hello")
+print(type(demo()))---------><class 'NoneType'>
+==================================================================
+
+def demo():
+    print("hello")
+    return 10
+print(type(demo())---------><class 'int'>
+
+===================================================================
+1)
+
+def function_name():
+	print("hello world")
+
+print(function_name())
+
+output:
+=======
+hello world
+None
+=========================================================
+2)
+
+def add(*a):
+   c=0
+   for x in a:
+       c=c+x
+   return c
+print(add(1,2,3,4,5))
+
+output:
+========
+15
+============================================================
+3)call back---- callback function is a function passed as an argument to another function
+============
+def greet(name, callback):
+    message = f"Hello, {name}!"
+    callback(message)  # Calling the callback function
+
+def print_message(msg):
+    print(msg)
+
+# Passing the function 'print_message' as a callback
+greet("Arasi", print_message)
+================================================================
+
+4)
+
+def add(f,s):
+    print(f+s)
+
+add(12,34)
+add(1,2)
+add(3,5)
+add(10,2)
+
+output:
+========
+46
+3
+8
+12
+
+==================================================================
+Python Lambda:
+=================
+A lambda function is a small anonymous function.
+
+A lambda function can take any number of arguments, but can only have one expression.
+
+lambda arguments : expression
+______________________________________________________________________________________________________
+1)
+add_lambda = lambda x, y: x + y
+
+print(add_lambda(5, 3))
+
+
+
+// 8
+---------------------------------------------------------------
+2)
+square = lambda x: x ** 2
+
+print(square(4))
+
+//16
+--------------------------------------------------
+
+3)
+
+nums = [1, 2, 3, 4, 5, 6]
+
+even_nums = list(filter(lambda x: x % 2 == 0, nums))
+
+print(even_nums)
+--------------------------------------------------
+4)
+
+
+squared_nums = list(map(lambda x: x ** 2, nums))
+
+print(squared_nums)
+
+
+
+========================================================================================================================
+
+nums = [1, 2, 3, 4, 5, 6]
+
+even_nums = list(filter(lambda x: x % 2 == 0, nums))
+
+print(even_nums)
+
+
+squared_nums = list(map(lambda x:x % 2 == 0, nums))
+
+print(squared_nums)
+
+//[2, 4, 6]
+[False, True, False, True, False, True]
+
+=============================================================================================================================
+**Python Lambda Function Questions**
+
+1. Add two numbers using lambda  
+   - **Input:** `5, 3`  
+   - **Output:** `8`  
+
+2. Multiply two numbers using lambda  
+   - **Input:** `4, 6`  
+   - **Output:** `24`  
+
+3. Find the maximum of two numbers  
+   - **Input:** `10, 20`  
+   - **Output:** `20`  
+
+4. Check if a number is even or odd  
+   - **Input:** `7`  
+   - **Output:** `"Odd"`  
+
+5. Check if a number is positive or negative  
+   - **Input:** `-5`  
+   - **Output:** `"Negative"`  
+
+---
+
+
+6. Sort a list of tuples based on the second value  
+   - **Input:** `[(1, 3), (2, 2), (4, 1)]`  
+   - **Output:** `[(4, 1), (2, 2), (1, 3)]`  
+
+7. Convert a list of words to uppercase using `map()`  
+   - **Input:** `["apple", "banana", "cherry"]`  
+   - **Output:** `["APPLE", "BANANA", "CHERRY"]`  
+
+8. Filter even numbers from a list using `filter()`  
+   - **Input:** `[1, 2, 3, 4, 5, 6]`  
+   - **Output:** `[2, 4, 6]`  
+
+9. Filter numbers greater than 3 from a list  
+   - **Input:** `[1, 2, 3, 4, 5, 6]`  
+   - **Output:** `[4, 5, 6]`  
+
+---
+
+10. Sort a list of dictionaries by age  
+   - **Input:** `[{"name": "Alice", "age": 25}, {"name": "Bob", "age": 22}]`  
+   - **Output:** `[{"name": "Bob", "age": 22}, {"name": "Alice", "age": 25}]`  
+
+11. Find the product of numbers in a list using `reduce()`  
+   - **Input:** `[1, 2, 3, 4]`  
+   - **Output:** `24`  
+
+12. Find the longest word in a list  
+   - **Input:** `["apple", "banana", "cherry", "blueberry"]`  
+   - **Output:** `"blueberry"`  
+
+13. Find the shortest word in a list  
+   - **Input:** `["apple", "banana", "cherry", "blue"]`  
+   - **Output:** `"blue"`  
+
+=============================================================================================================================================
+"""
+Advanced Python Function Questions
+"""
+
+# 1. Function Decorators:
+# Write a decorator function that logs the execution time of any function it wraps.
+
+# 2. Closures:
+# Create a function that returns another function, which adds a given number to its argument.
+
+# 3. Lambda Functions:
+# Write a lambda function to sort a list of dictionaries by a specific key.
+
+# 4. Function Caching:
+# Implement a function that uses functools.lru_cache to optimize repeated calculations.
+
+# 5. Higher-Order Functions:
+# Write a function that takes another function as an argument and applies it to a list of values.
+
+# 6. Partial Functions:
+# Use functools.partial to create a function that always multiplies by 5.
+
+# 7. Recursion:
+# Write a recursive function to compute the nth Fibonacci number.
+
+# 8. Unpacking Arguments:
+# Implement a function that accepts *args and **kwargs and prints them in a structured format.
+
+# 9. Function Generators:
+# Write a generator function that yields prime numbers indefinitely.
+
+# 10. Map, Filter, Reduce:
+# Use map, filter, and reduce to process a list of numbers and compute their product.
+
+# 11. Function Introspection:
+# Write a function that takes another function as input and prints its name, docstring, and argument count.
+
+# 12. Function Overloading (Single Dispatch):
+# Use functools.singledispatch to create a function that handles different data types differently.
+
+# 13. Method Chaining:
+# Implement a class where methods return self to allow method chaining.
+
+# 14. Function Composition:
+# Write a function that takes two functions as arguments and returns their composition.
+
+# 15. Dynamic Function Creation:
+# Create a function dynamically using types.FunctionType or exec().
+================================================================================================================================================
+from functools import reduce
+
+numbers = [1, 2, 3, 4, 5]
+
+# Multiply all numbers in the list
+product = reduce(lambda x, y: x * y, numbers)
+
+print(product)  # Output: 120
+
+
+Step-by-Step Execution:
+
+    Initialize the list → numbers = [1, 2, 3, 4, 5]
+    Call reduce()
+        The function lambda x, y: x * y is applied sequentially to the elements of numbers.
+    First iteration: (1 * 2) → 2
+    Second iteration: (2 * 3) → 6
+    Third iteration: (6 * 4) → 24
+    Fourth iteration: (24 * 5) → 120
+    Final result: 120 is stored in product.
+    Print the result: print(product) outputs 120.
+
+========================================================================================================================
+
+1)user getting list:
+=====================
+
+a=[]
+
+b=int(input("enter"))
+
+for i in range(0,b):
+	c=int(input("enter the",i,"th value"))
+	a.append(c)
+
+output:
+========
+enter 5
+enter the value 21
+enter the value 45
+enter the value 56
+enter the value 34
+enter the value 56
+[21, 45, 56, 34, 56]
+
+=====================================================================
+2)
+a=[]
+
+b=int(input("enter "))
+
+for i in range(0,b):
+    name=input("enter the name ")
+    c=int(input("enter the age "))
+    d={"name":name,"age":c}
+    a.append(d)
+print(a)
+
+output:
+========
+enter 2
+enter the name surya
+enter the age 26
+enter the name santhosh
+enter the age 22
+[{'name': 'surya', 'age': 26}, {'name': 'santhosh', 'age': 22}]
+
+===============================================================================
+
+a=[]
+
+b=int(input("enter: "))
+
+for i in range(0,b):
+	c=input(f"enter the {i} th value: ")
+	a.append(c)
+
+print(a)
+
+output:
+========
+enter: 5
+enter the 0 th value: tamil
+enter the 1 th value: english
+enter the 2 th value: maths
+enter the 3 th value: science 
+enter the 4 th value: social
+['tamil', 'english', 'maths', 'science ', 'social']
+====================================================================================
+a=[]
+
+b=int(input("enter dictionary length you want: "))
+
+for i in range(0,b):
+    name=input(f"enter the  {i+1} name  ")
+    c=int(input(f"enter the {i+1} age "))
+    d={"name":name,"age":c}
+    a.append(d)
+print(a)
+
+for i in range(len(a)):
+    if(a[i]["age"]>=18):
+        print(a[i]["name"], "is eligible for vote")
+
+output:
+========
+enter dictionary length you want: 2
+
+enter the  1 name  srini
+enter the 1 age 15
+
+enter the  2 name  divya
+enter the 2 age 18
+
+[{'name': 'srini', 'age': 15}, {'name': 'divya', 'age': 18}]
+
+divya is eligible for vote
+=======================================================================================
+class:
+======
+a class is like an object constructor, (or) a blueprint for creating object.
+
+syntax:
+=======
+class class_name:
+	x=5
+	name="srini"
+
+print(class_name().x)
+
+output:5
+===================================================================================
+
+
+class divya:
+  name="divya"
+  age=21
+  clg="med"
+
+class srini:
+  name="srinisha"
+  age=22
+  clg="eng"
+
+a=divya()
+print(a.name,srini().name,f'{a.name} is a 1st year {a.clg} student')
+
+output:divya srinisha divya is a 1st year med student
+===================================================================================
+1)
+class myclass:
+	def __init__(self,f,s):
+		self.f=f
+		self.s=s		
+
+
+myclass(10,12)
+==================================================================================
+2)
+class myclass:
+	def __init__(self,f,s):
+		self.f=f
+		self.s=s
+		
+	def add(self):
+	   return f"{self.f}  and {self.s}"
+
+print(myclass(3,4).add())
+
+output:
+========
+
+3 and 4
+
+======================================================================================
+
+3)
+
+def sub(a,b):
+    print(a-b)
+
+class myclass:
+    print("class")
+
+    def __init__(self,f,s):
+        self.f=f 
+        self.s=s
+        print("init")
+
+    def add():
+        print("add")
+    sub(10,5)
+
+print(myclass(3,4))
+
+
+output:
+=======
+class
+5
+init
+<__main__.myclass object at 0x7e54a0362b90>
+
+======================================================================================
+4)
+def sub(a,b):
+    print(a-b)
+
+class myclass:
+    print("class")
+    def __init__(self,f,s):
+        self.f=f 
+        self.s=s
+        print("init")
+    def add():
+        print("add")
+    sub(10,5)
+
+print(myclass(3,4).add())
+
+
+output:
+=======
+class
+5
+init
+add
+
+==============================================================
+
+5)
+
+a=[1,2,3,4,5]
+
+class myclass:
+    print("class")
+    def __init__(self,li):
+        self.li=li 
+
+    def loo(self):
+        for i in self.li:
+            print(i)
+
+print(myclass(a).loo())
+
+output:
+=======
+class
+1
+2
+3
+4
+5
+none------because we didn't define return
+
+==============================================================
+6)
+
+a=[1,2,3,4,5]
+
+class myclass:
+    print("class")
+    def __init__(self,li):
+        self.li=li 
+    def loo(self):
+        for i in self.li:
+            print(i)
+	return "loop"
+
+print(myclass(a).loo())
+
+output:
+=======
+class
+1
+2
+3
+4
+5
+loop
+
+======================================================================================
+num1=int(input("Enter the number_1: "))
+num2=int(input("Enter the number_2: "))
+
+def add(num1,num2):
+    return num1+num2
+
+class number:
+    def __init__(self,fun):
+        self.fun=fun
+        print(f'{self.fun} is a result')
+    
+print(number(add(num1,num2)))
+
+output:
+=======
+Enter the number_1: 1
+Enter the number_2: 2
+3
+<__main__.number object at 0x7fa481f1b090
+=====================================================================================
+
+class myclass:
+	def __init__(self):----constructor
+		print("init")
+======================================================================================
+1)
+class myclass:
+	def __init__(self,name):
+	    self.newname=name
+	    print(name)
+		
+	def add(self):
+	     print(self.newname)
+	     return "hi"
+
+print(myclass("santhosh").add())
+
+output:
+=========
+santhosh
+santhosh 
+hi
+
+====================================================================================
+
+OOP:
+=====
+1)inheritence:
+================
+it is used to access parent in child class.
+
+ex:
+====
+class parent():
+	def parent_fun(self):
+		print("parent")
+		return 5+3
+		
+
+class child(parent):
+	def child_fun(self):
+		print("child")
+		return parent().parent_fun()
+
+print(child().child_fun())
+
+
+output:
+=======
+child
+parent
+8
+====================================================================================
+
+1)
+class parent():
+    def __init__(self,number):
+        x=5+number
+        self.num=number
+        print(x)
+    def add(self,a=20):
+        print(a)
+        return "hi"
+
+    
+print(parent(10).add("python"))
+
+output:
+=========
+15
+python
+hi
+======================================================
+2)
+
+class parent():
+    def __init__(self,number):
+        x=5+number
+        self.num=number
+        print(x)
+    def add(self,a=20):
+        print(a)
+        return "hi"
+
+    
+print(parent(10).add())
+
+output:
+=========
+15
+python
+20
+==================================================================
+step-by
+class:
+=========
+1)
+class myclass():
+    x=5
+myclass()---------------->execute.but no output
+
+==================================================================
+2)
+class myclass():
+    x=5
+print(myclass())---------------><__main__.myclass object at 0x7c05effa2f10>
+
+=====================================================================
+3)
+class myclass():
+    x=5
+    student_name=name
+print(myclass().x)------------> 5
+======================================================================
+4)
+whenever class is defined the constructor(__init__) is automatically trigger.
+
+name=input("enter the name : ")
+class myclass():
+    def __init__(self,name):
+        self.student_name=name
+        print(self.student_name)
+        print(name)
+print(myclass(name))
+
+output:
+========
+enter the name : python
+python
+python
+<__main__.myclass object at 0x7bb9e9c9ac50>
+=========================================================
+5)
+
+class myclass():
+    def __init__(self,name):
+        self.student_name=name
+        print(self.student_name)
+        print(name)
+    def myfunction(self,name):
+        print(name)
+        print(self.student_name)
+      
+print(myclass("arasi").myfunction("tamil"))
+
+output:
+=======
+arasi
+arasi
+tamil
+arasi
+None--------it has no return
+
+======================================================================
+6)
+class myclass():
+    def __init__(self,name):
+        self.student_name=name
+
+print(myclass("arasi").student_name)----------arasi
+
+=======================================================================================================================================================
+
+constructor:
+=============
+whenever the class created the constructor is automatically called.
+
+ex:
+==== 
+class myclass():
+    def __init__(self):
+        print("i am constractor")
+	
+myclass()---------------------i am constractor
+==================================================================================
+4 type of oops:
+==================
+inheritance:
+==============
+u can access the parent into the child.
+
+ex:
+====
+class bank():
+    total=15000
+    
+class gst():
+    year_gst=200
+
+print(bank().total+gst().year_gst)--------------->15200
+===============================================================================
+
+ex:
+====
+class bank():
+    total=15230
+    def name(self):
+        return "tamil"
+        
+class axis():
+    total=15230
+    def name(self):
+        return "arasi"
+    
+class gst(bank,axis):
+    gst_percentage=15
+    year_gst=(bank().total*gst_percentage)/100
+
+print(gst().year_gst,gst().name(),gst().name())
+
+output:
+========
+2284.5 tamil tamil
+
+======================================================================
+2)
+class bank():
+    total=15230
+    def name(self):
+        return "tamil"
+        
+class axis():
+    total=15230
+    def stuname(self):
+        return "arasi"
+    
+class gst(bank,axis):
+    gst_percentage=15
+    year_gst=(bank().total*gst_percentage)/100
+print(gst().year_gst,gst().name(),gst().stuname())
+
+output:
+=========
+2284.5 tamil arasi
+
+
+=====================================================================================
+Polymorphism:
+=============
+we can define polymorphism as the ability of a message to be displayed in more than one form. 
+Real life example of polymorphism, a person at the same time can have different characteristic. 
+Like a man at the same time is a father, a husband, an employee.
+
+
+
+ex:
+=====
+class Animal:
+    def speak(self):
+        pass
+
+class Dog(Animal):
+    def speak(self):
+        return "Woof!"
+
+class Cat(Animal):
+    def speak(self):
+        return "Meow!"
+
+class Cow(Animal):
+    def speak(self):
+        return "Moo!"
+
+# Function that takes any Animal object and calls its speak method
+def make_animal_speak(animal):
+    return animal.speak()
+
+# Creating instances of different animals
+dog = Dog()
+cat = Cat()
+cow = Cow()
+
+# Using the make_animal_speak function with different animals
+print(make_animal_speak(dog))  # Output: Woof!
+print(make_animal_speak(cat))  # Output: Meow!
+print(make_animal_speak(cow))  # Output: Moo!
+
+=================================================================================================================================================
+ex:2:
+==========
+class Shape:
+    def area(self):
+        pass
+
+class Rectangle(Shape):
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+    
+    def area(self):
+        return self.length * self.width
+
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+    
+    def area(self):
+        return 3.14 * self.radius * self.radius
+
+# Function that calculates the area of any shape object
+def calculate_area(shape):
+    return shape.area()
+
+# Creating instances of different shapes
+rectangle = Rectangle(5, 4)
+circle = Circle(3)
+
+# Using the calculate_area function with different shapes
+print("Area of rectangle:", calculate_area(rectangle))  # Output: Area of rectangle: 20
+print("Area of circle:", calculate_area(circle))        # Output: Area of circle: 28.26
+
+====================================================================================================
+
+**Task: Vehicle Inheritance and Polymorphism**
+
+**Problem Statement:**  
+You need to create a base class `Vehicle` with attributes and methods that can be inherited by its subclasses `Car` and `Bike`. Each subclass should override a method to display its own details.
+
+**Class Details:**  
+- **Base Class:** `Vehicle`  
+  - Attributes: `brand`, `model`, `year`  
+  - Method: `display_info()`, which prints `"Vehicle: brand model (year)"`  
+- **Derived Class 1:** `Car` (inherits `Vehicle`)  
+  - Additional Attribute: `doors`  
+  - Overrides `display_info()` to print `"Car: brand model (year) with doors doors"`  
+- **Derived Class 2:** `Bike` (inherits `Vehicle`)  
+  - Additional Attribute: `engine_capacity`  
+  - Overrides `display_info()` to print `"Bike: brand model (year) with engine_capacity cc"`  
+
+---
+
+**Input Format:**  
+- First line: `vehicle_type` (`Car` or `Bike`)  
+- Next three lines: `brand`, `model`, `year` (common for both)  
+- Next line:  
+  - If `Car`: An integer `doors` (number of doors)  
+  - If `Bike`: An integer `engine_capacity` (in cc)  
+
+---
+
+**Output Format:**  
+- Call `display_info()` on the created object and print its result.  
+
+---
+
+**Example 1: (Car Input & Output)**  
+**Input:**  
+```
+Car
+Toyota
+Camry
+2022
+4
+```
+**Output:**  
+```
+Car: Toyota Camry (2022) with 4 doors
+```
+
+---
+
+**Example 2: (Bike Input & Output)**  
+**Input:**  
+```
+Bike
+Yamaha
+R15
+2023
+150
+```
+**Output:**  
+```
+Bike: Yamaha R15 (2023) with 150 cc
+```
+
+
+==============================================================================================================
+import platform
+print(platform.system())
+
+output:windows
+
+====================================================================================================
+
+ex:1)
+
+main.py:
+========
+import main2
+
+print(main2.b['name'])
+
+main2.py:
+========
+a=10
+b={
+   'name':'tamil'
+}
+
+=========================================================================================================
+
+2)random:
+=========
+import random
+x=random.randint(1,100)
+print(x)------>generate random number
+
+==========================================================================================================
+
+otp generate:
+=============
+import random as r
+otp=''
+value='1234567890@#$%&*abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+for i in range(6):
+    print(otp)
+    otp=otp+r.choice(value)
+print(otp)
+
+
+output:
+=======
+5
+5Z
+5Zf
+5Zf*
+5Zf*J
+5Zf*JC-------->last output
+==========================================================================================================
+3)datetime
+=============
+import datetime
+x=datetime.datetime.now()
+print(x)
+print(x.day)
+print(x.year)
+print(x.month)
+print(x.strftime('%A'))
+print(x.strftime('%B'))
+print(x.strftime('%1'))
+print(x.strftime('%D'))
+
+output:
+=======
+2024-04-02 09:45:11.193314
+2
+2024
+4
+Tuesday
+April
+
+============================================================================
+4)Math:
+=======
+import math
+print(min(1,2,3,4,5))
+print(max(1,2,3,4,5))
+print(math.floor(1.5))
+print(math.floor(1.2))
+print(math.ceil(2.5))
+print(math.ceil(2.4))
+print(math.pi)
+print(math.pow(4,3))
+
+output:
+=======
+1
+5
+1
+1
+3
+3
+3.141592653589793
+64.0
+
+============================================================================
+
+file handling:
+---------------
+1)
+file=open('file.txt','a')
+print(file.write('\norange\n'))
+print(file.write('watermelon\n'))
+file.close()
+file=open('file.txt','r+')
+print(file.read())
+
+
+output:
+========
+8
+11        
+apple     
+mango     
+orange    
+watermelon
+
+==============================================================================================
+
+# Open a file for reading
+file = open("example.txt", "r")  # 'r' means read mode
+content = file.read()
+print(content)
+file.close()  # Always close the file when done
+================================================================================================
+# Writing to a file
+file = open("example.txt", "w")  # 'w' means write mode (creates file if it doesn't exist)
+file.write("Hello, World!\nThis is a file handling example.")
+file.close()
+===================================================================================================
+# Appending to a file
+file = open("example.txt", "a")  # 'a' means append mode
+file.write("\nAdding new line to the file.")
+file.close()
+================================================================================================
+# Reading a file line by line
+file = open("example.txt", "r")
+for line in file:
+    print(line.strip())  # strip() removes the newline character
+file.close()
+==========================================================================================================
+# Reading a file using 'with'
+with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)
+
+# Writing to a file using 'with'
+with open("example.txt", "w") as file:
+    file.write("This is a new file content.")
+
+# Appending to a file using 'with'
+with open("example.txt", "a") as file:
+    file.write("\nAnother appended line.")
+==================================================================================================================
+
+
+asign/await:
+============
+
+Asynchronous Function (async def):
+
+    A function defined with async def is an asynchronous function.
+    It allows you to use the await keyword inside the function to pause the function's execution until the awaited operation completes.
+
+Awaitable Objects:
+
+    When you use await in an asynchronous function, it is used to pause execution until the awaitable object (like another asynchronous function or coroutine) has finish
+============================================================================================================================================================================
+
+import asyncio
+
+async def greet(name):
+    await asyncio.sleep(1)
+    print(f"Hello, {name}!")
+
+async def main():
+    await asyncio.gather(greet("Alice"), greet("Bob"))
+
+asyncio.run(main())
+
+
