@@ -753,6 +753,47 @@ print(a[-6])----IndexError: string index out of range
 15)convert the a='154' to integer?
 
 ==============================================================================================================
+
+Q1. What will be the result of: "DataScience"[1:8:2]?
+
+Q2. Explain how 'is' and '==' behave differently for mutable vs immutable data types using examples.
+
+Q3. What is the output of: [1, 2, 3, 4][:-1:2]?
+
+Q4. Can a set be sliced? If not, why?
+
+Q5. What is the result of: (1, 2, 3) is (1, 2, 3)?
+
+Q6. Given a = [1, 2, 3], what is the result of id(a) == id(a[:])?
+
+Q7. How do slicing and identity operators interact in lists?
+
+Q8. What is the output of: "abcdefg"[5:1:-2]?
+
+Q9. What data type is returned by: range(5)[::2]?
+
+Q10. Given x = [1, 2, 3], y = x, and z = x[:], explain the result of x is y and x is z.
+
+Q11. What will the expression "Python"[::-1][1:5] return?
+
+Q12. How do membership operators behave differently with strings vs dictionaries?
+
+Q13. What is the output of: type((10)) and type((10,))?
+
+Q14. Why does the expression 256 is 256 return True but 257 is 257 may return False?
+
+Q15. What slicing operation gives the first and last characters of a string?
+
+Q16. What will be the output of: [True, False][True is 1]?
+
+Q17. How can slicing be used to extract all even indexed characters from a string?
+
+Q18. What does the expression "abcdef"[::-3] return?
+
+Q19. What will happen if you try to slice a dictionary?
+
+Q20. Given a = [[1,2,3],[4,5,6],[7,8,9]], how do you slice the second column?
+=========≠===========================================================================================================
  
 Slicing:
 =========
