@@ -1777,6 +1777,116 @@ print(a)
 20) Convert the set {10, 20, 30, 40} to a list and access the first element.
 
 ===================================================================================================================
+Overall Test:
+-------------
+
+1. You are given: a = [1, 2, 3]; a.append([4, 5]) — What is the structure of 'a' now?
+
+2. Given: x = [1, 2, 3]; y = x; y.pop(); x.append(4) — What is 'x' now?
+
+3. Given: a = 5; b = 0; result = a and b — What is the value of result?
+
+4. Evaluate the expression: 0 or [] or 'hello' — Which value will it return?
+
+5. Evaluate: x = not(1 and 0) — What is the value of x?
+
+6. Convert the integers 10 and -5 to binary using bin()
+
+7. Dictionary manipulation: a = {'x': 10, 'y': 20}; a['z'] = a.pop('x') — What is 'a' now?
+
+8. Tuples a = (1, 2), b = (3, 4); c = a + b — What is 'c'?
+
+9. From list a = [1, 2, 3, 4, 5], extract alternate elements starting from 0th index
+
+10. Get length of dictionary with 3 key-value pairs
+
+11. What is the type of (1)?
+
+12. What is the type of (1,)?
+
+13. If a = {'a': 1}; b = a; b['a'] = 2 — What is a?
+
+14. Perform unpacking: x, y, z = [1, 2, 3] — What are x, y, z?
+
+15. Check if 3 is present in list [1, 2, 3, 4]
+
+16. Check identity: x = 10; if x is 10 — Is it True?
+
+17. a = 3; b = 3.0; compare a == b and a is b
+
+18. Check if character 'a' is in string 'apple'
+
+19. Evaluate if 'z' is not in 'pizza'
+
+20. Replace a[1:2] in [1, 2, 3] with [8, 9] — What is 'a'?
+
+21. Get last element of a = [1, 2, 3] using negative indexing
+
+22. Do bitwise AND: a = 12; b = 10 — What is a & b?
+
+23. What is the type of an empty {}?
+
+24. Create a set and add duplicate values: a = set(); a.add(1); a.add(2); a.add(1) — What is 'a'?
+
+25. Pop the last item from list a = [1, 2, 3] — What remains?
+
+26. Take input from user and check if input is a palindrome
+
+27. Take input number and check if it is divisible by both 3 and 5
+
+28. Accept string input from user and convert it to a list of characters
+
+29. Accept a space-separated string from user and split into a list
+
+30. Accept two integers and find which one is greater using if-else
+
+31. Accept a number from user and print whether it is odd or even using bitwise
+
+32. Accept a string from user and reverse it using slicing
+
+33. Take two integers as input and swap their values using unpacking
+
+34. Accept a number, convert to binary and count number of 1s
+
+35. Accept a list input and find length using len()
+
+36. Accept a list input and pop 2 items, then show updated list
+
+37. Take name and age as input and print using f-string formatting
+
+38. Accept a string and show characters at even positions
+
+39. Accept string and check if it contains vowels using 'in'
+
+40. Accept list of integers and remove duplicates using set
+
+41. Accept two sets and find union, intersection, and difference
+
+42. Accept a dictionary from user and display all keys
+
+43. Accept a list and count number of elements using loop
+
+44. Accept input and check if it is digit using isdigit()
+
+45. Accept a number and print its square only if it's even
+
+46. Accept a string and print all uppercase letters in it
+
+47. Accept string and check whether it starts and ends with same letter
+
+48. Accept number from user and print binary, octal, hex
+
+49. Accept string and find how many times each char appears
+
+50. Accept a number and print next 5 even numbers using loop
+
+
+---------------------------
+Output:
+________
+
+
+===================≠=======================================================================================================
 LOOP:
 ======
 for:
