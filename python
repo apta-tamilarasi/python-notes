@@ -1885,6 +1885,476 @@ Overall Test:
 Output:
 ________
 
+20 june 2025 Test Ans:
+____________________
+
+1. What happens when we do this?
+```python
+a = [1, 2, 3]
+a.append([4, 5])
+print(a)
+```
+Answer: [1, 2, 3, [4, 5]]
+
+__________________________________________
+
+2. Change x and y, see what x becomes
+```python
+x = [1, 2, 3]
+y = x
+y.pop()
+x.append(4)
+print(x)
+```
+Answer: [1, 2, 4]
+
+__________________________________________
+
+3. Find the result of a and b
+```python
+a = 5
+b = 0
+result = a and b
+print(result)
+```
+Answer: 0
+
+__________________________________________
+
+4. What will this return?
+```python
+print(0 or [] or 'hello')
+```
+Answer: 'hello'
+
+__________________________________________
+
+5. Use not with and
+```python
+x = not(1 and 0)
+print(x)
+```
+Answer: True
+
+__________________________________________
+
+6. Convert numbers to binary
+```python
+print(bin(10))
+print(bin(-5))
+```
+Answer: '0b1010' and '-0b101'
+
+__________________________________________
+
+7. Change dictionary using pop and add
+```python
+a = {'x': 10, 'y': 20}
+a['z'] = a.pop('x')
+print(a)
+```
+Answer: {'y': 20, 'z': 10}
+
+__________________________________________
+
+8. Join two tuples
+```python
+a = (1, 2)
+b = (3, 4)
+c = a + b
+print(c)
+```
+Answer: (1, 2, 3, 4)
+
+__________________________________________
+
+9. Print alternate elements from list
+```python
+a = [1, 2, 3, 4, 5]
+print(a[::2])
+```
+Answer: [1, 3, 5]
+
+__________________________________________
+
+10. Count items in dictionary
+```python
+a = {'a': 1, 'b': 2, 'c': 3}
+print(len(a))
+```
+Answer: 3
+
+__________________________________________
+
+11. What type is (1)?
+```python
+print(type((1)))
+```
+Answer: <class 'int'>
+
+__________________________________________
+
+12. What type is (1,)?
+```python
+print(type((1,)))
+```
+Answer: <class 'tuple'>
+
+__________________________________________
+
+13. Change value through another name
+```python
+a = {'a': 1}
+b = a
+b['a'] = 2
+print(a)
+```
+Answer: {'a': 2}
+
+__________________________________________
+
+14. Unpack list to variables
+```python
+x, y, z = [1, 2, 3]
+print(x, y, z)
+```
+Answer: 1 2 3
+
+__________________________________________
+
+15. Is 3 in the list?
+```python
+print(3 in [1, 2, 3, 4])
+```
+Answer: True
+
+__________________________________________
+
+16. Is x 10 using 'is'?
+```python
+x = 10
+print(x is 10)
+```
+Answer: True (for small numbers)
+
+__________________________________________
+
+17. Compare 3 and 3.0
+```python
+a = 3
+b = 3.0
+print(a == b)
+print(a is b)
+```
+Answer: True and False
+
+__________________________________________
+
+18. Check if 'a' is in 'apple'
+```python
+print('a' in 'apple')
+```
+Answer: True
+
+__________________________________________
+
+19. Check if 'z' not in 'pizza'
+```python
+print('z' not in 'pizza')
+```
+Answer: False
+
+__________________________________________
+
+20. Replace part of list
+```python
+a = [1, 2, 3]
+a[1:2] = [8, 9]
+print(a)
+```
+Answer: [1, 8, 9, 3]
+
+__________________________________________
+
+21. Get last item using -1
+```python
+a = [1, 2, 3]
+print(a[-1])
+```
+Answer: 3
+
+__________________________________________
+
+22. Bitwise AND
+```python
+a = 12
+b = 10
+print(a & b)
+```
+Answer: 8
+
+__________________________________________
+
+23. Type of {}
+```python
+print(type({}))
+```
+Answer: <class 'dict'>
+
+__________________________________________
+
+24. Add same value twice to set
+```python
+a = set()
+a.add(1)
+a.add(2)
+a.add(1)
+print(a)
+```
+Answer: {1, 2}
+
+__________________________________________
+
+25. Remove last from list
+```python
+a = [1, 2, 3]
+a.pop()
+print(a)
+```
+Answer: [1, 2]
+
+__________________________________________
+
+26. Check if input is a palindrome
+```python
+s = input()
+print("Palindrome" if s == s[::-1] else "Not Palindrome")
+```
+
+__________________________________________
+
+27. Check divisible by 3 and 5
+```python
+n = int(input())
+print("Yes" if n % 3 == 0 and n % 5 == 0 else "No")
+```
+
+__________________________________________
+
+28. Convert string to list of letters
+```python
+s = input()
+print(list(s))
+```
+
+__________________________________________
+
+29. Convert space-separated input to list
+```python
+s = input()
+print(s.split())
+```
+
+__________________________________________
+
+30. Compare two numbers
+```python
+a = int(input())
+b = int(input())
+print("A is greater" if a > b else "B is greater or equal")
+```
+
+__________________________________________
+
+31. Check even or odd using bitwise
+```python
+n = int(input())
+print("Odd" if n & 1 else "Even")
+```
+
+__________________________________________
+
+32. Reverse a string
+```python
+s = input()
+print(s[::-1])
+```
+
+__________________________________________
+
+33. Swap two numbers using unpacking
+```python
+a, b = input().split()
+a, b = b, a
+print(a, b)
+```
+
+__________________________________________
+
+34. Convert to binary and count 1s
+```python
+n = int(input())
+b = bin(n)
+print(b)
+print(b.count('1'))
+```
+
+__________________________________________
+
+35. Length of list
+```python
+l = input().split()
+print(len(l))
+```
+
+__________________________________________
+
+36. Pop two values from list
+```python
+l = input().split()
+l.pop()
+l.pop()
+print(l)
+```
+
+__________________________________________
+
+37. Print name and age
+```python
+name = input()
+age = input()
+print(f"My name is {name} and I am {age} years old")
+```
+
+__________________________________________
+
+38. Print characters at even positions
+```python
+s = input()
+print(s[::2])
+```
+
+__________________________________________
+
+39. Check if a string has any vowels (uses for-in)
+```python
+s = input()
+vowels = 'aeiouAEIOU'
+found = False
+for ch in vowels:
+    if ch in s:
+        found = True
+        break
+print("Has vowels" if found else "No vowels")
+```
+
+__________________________________________
+
+40. Remove duplicates from list
+```python
+l = input().split()
+print(list(set(l)))
+```
+
+__________________________________________
+
+41. Set operations
+```python
+s1 = set(input().split())
+s2 =you set(input().split())
+print("Union:", s1 | s2)
+print("Intersection:", s1 & s2)
+print("Difference:", s1 - s2)
+```
+
+__________________________________________
+
+42. Show dictionary keys
+```python
+d = eval(input())
+print(d.keys())
+```
+
+__________________________________________
+
+43. Count how many words are in the list (uses for-in)
+```python
+l = input().split()
+c = 0
+for _ in l:
+    c += 1
+print(c)
+```
+
+__________________________________________
+
+44. Check if input is digit
+```python
+s = input()
+print(s.isdigit())
+```
+
+__________________________________________
+
+45. Print square if number is even
+```python
+n = int(input())
+if n % 2 == 0:
+    print(n * n)
+```
+
+__________________________________________
+
+46. Show capital letters only (uses for-in)
+```python
+s = input()
+for ch in s:
+    if ch.isupper():
+        print(ch)
+```
+
+__________________________________________
+
+47. Starts and ends with same letter
+```python
+s = input()
+print(s[0] == s[-1])
+```
+
+__________________________________________
+
+48. Show binary, octal, and hex of a number
+```python
+n = int(input())
+print(bin(n), oct(n), hex(n))
+```
+
+__________________________________________
+
+49. Count how many times each letter comes (uses for-in)
+```python
+s = input()
+d = {}
+for ch in s:
+    d[ch] = d.get(ch, 0) + 1
+print(d)
+```
+
+__________________________________________
+
+50. Print next 5 even numbers
+```python
+n = int(input())
+count = 0
+while count < 5:
+    n += 1
+    if n % 2 == 0:
+        print(n)
+        count += 1
+```
+
+__________________________________________
+
 
 ===================≠=======================================================================================================
 LOOP:
