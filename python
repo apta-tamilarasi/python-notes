@@ -2355,6 +2355,293 @@ while count < 5:
 
 __________________________________________
 
+Explain 🖊️:
+----------------
+
+1. **a = \[1, 2, 3]; a.append(\[4, 5])**
+   Answer: \[1, 2, 3, \[4, 5]] — It added a small list inside the big list.
+
+2. **x = \[1, 2, 3]; y = x; y.pop(); x.append(4)**
+   Answer: \[1, 2, 4] — x and y are the same box!
+
+3. **a = 5; b = 0; result = a and b**
+   Answer: 0 — Because 'and' stops when it sees 0.
+
+4. **0 or \[] or 'hello'**
+   Answer: 'hello' — It picks the first true thing.
+
+5. **x = not(1 and 0)**
+   Answer: True — Because (1 and 0) is 0, and not 0 is True.
+
+6. **bin(10), bin(-5)**
+   Answer: '0b1010', '-0b101' — Binary is computer language!
+
+7. **a = {'x': 10, 'y': 20}; a\['z'] = a.pop('x')**
+   Answer: {'y': 20, 'z': 10} — Moved 'x' to 'z'
+
+8. **a = (1, 2), b = (3, 4); c = a + b**
+   Answer: (1, 2, 3, 4) — Added two tuples.
+
+9. **a = \[1, 2, 3, 4, 5]; a\[::2]**
+   Answer: \[1, 3, 5] — Every other number.
+
+10. **len({'a':1, 'b':2, 'c':3})**
+    Answer: 3 — It has 3 things.
+
+11. **type(1)**
+    Answer: int — A normal number.
+
+12. **type((1,))**
+    Answer: tuple — A tiny tuple!
+
+13. **a = {'a': 1}; b = a; b\['a'] = 2**
+    Answer: {'a': 2} — b and a are the same!
+
+14. **x, y, z = \[1, 2, 3]**
+    Answer: x=1, y=2, z=3
+
+15. **3 in \[1, 2, 3, 4]**
+    Answer: True — Yes, 3 is there.
+
+16. **x = 10; x is 10**
+    Answer: True — It's exactly the same.
+
+17. **a = 3; b = 3.0; a == b, a is b**
+    Answer: True, False — Same value, not same type.
+
+18. **'a' in 'apple'**
+    Answer: True — Yes, it has 'a'.
+
+19. **'z' not in 'pizza'**
+    Answer: False — Because 'z' is in 'pizza'.
+
+20. **a = \[1, 2, 3]; a\[1:2] = \[8, 9]**
+    Answer: \[1, 8, 9, 3] — Changed one piece to two.
+
+21. **a = \[1, 2, 3]; a\[-1]**
+    Answer: 3 — Last item.
+
+22. **a = 12; b = 10; a & b**
+    Answer: 8 — Bit-by-bit AND.
+
+23. **type({})**
+    Answer: dict — It's a dictionary.
+
+24. **a = set(); a.add(1); a.add(2); a.add(1)**
+    Answer: {1, 2} — Sets don’t keep repeats.
+
+25. **a = \[1, 2, 3]; a.pop()**
+    Answer: \[1, 2] — Took out the last one.
+
+26. **Check palindrome**
+
+```python
+s = input("Enter text: ")
+if s == s[::-1]:
+    print("Palindrome")
+else:
+    print("Not palindrome")
+```
+
+27. **Check divisible by 3 and 5**
+
+```python
+n = int(input("Enter number: "))
+if n % 3 == 0 and n % 5 == 0:
+    print("Yes")
+else:
+    print("No")
+```
+
+28. **Convert string to list of characters**
+
+```python
+s = input("Enter string: ")
+print(list(s))
+```
+
+29. **Split space-separated string**
+
+```python
+s = input("Enter words: ")
+print(s.split())
+```
+
+30. **Find greater number**
+
+```python
+a = int(input())
+b = int(input())
+if a > b:
+    print("a is bigger")
+else:
+    print("b is bigger")
+```
+
+31. **Odd or even using bitwise**
+
+```python
+n = int(input())
+if n & 1:
+    print("Odd")
+else:
+    print("Even")
+```
+
+32. **Reverse string using slicing**
+
+```python
+s = input()
+print(s[::-1])
+```
+
+33. **Swap using unpacking**
+
+```python
+a = int(input())
+b = int(input())
+a, b = b, a
+print(a, b)
+```
+
+34. **Binary and count 1s**
+
+```python
+n = int(input())
+b = bin(n)
+print(b, b.count('1'))
+```
+
+35. **Find list length**
+
+```python
+lst = list(map(int, input().split()))
+print(len(lst))
+```
+
+36. **Pop 2 items from list**
+
+```python
+lst = list(map(int, input().split()))
+lst.pop()
+lst.pop()
+print(lst)
+```
+
+37. **Name and age using f-string**
+
+```python
+name = input()
+age = input()
+print(f"My name is {name} and I am {age} years old.")
+```
+
+38. **Even position characters**
+
+```python
+s = input()
+print(s[::2])
+```
+
+39. **Check for vowels**
+
+```python
+s = input()
+if any(v in s for v in 'aeiouAEIOU'):
+    print("Has vowels")
+else:
+    print("No vowels")
+```
+
+40. **Remove duplicates**
+
+```python
+lst = list(map(int, input().split()))
+print(list(set(lst)))
+```
+
+41. **Set operations**
+
+```python
+s1 = set(map(int, input().split()))
+s2 = set(map(int, input().split()))
+print("Union:", s1 | s2)
+print("Intersection:", s1 & s2)
+print("Difference:", s1 - s2)
+```
+
+42. **Display dictionary keys**
+
+```python
+d = {'a':1, 'b':2}
+print(d.keys())
+```
+
+43. **Count elements with loop**
+
+```python
+lst = list(map(int, input().split()))
+c = 0
+for _ in lst:
+    c += 1
+print(c)
+```
+
+44. **Check if input is digit**
+
+```python
+s = input()
+print(s.isdigit())
+```
+
+45. **Square if even**
+
+```python
+n = int(input())
+if n % 2 == 0:
+    print(n*n)
+```
+
+46. **Print uppercase letters**
+
+```python
+s = input()
+for ch in s:
+    if ch.isupper():
+        print(ch)
+```
+
+47. **Starts and ends with same letter**
+
+```python
+s = input()
+print(s[0] == s[-1])
+```
+
+48. **Print binary, octal, hex**
+
+```python
+n = int(input())
+print(bin(n), oct(n), hex(n))
+```
+
+49. **Count characters**
+
+```python
+s = input()
+for ch in set(s):
+    print(ch, s.count(ch))
+```
+
+50. **Next 5 even numbers**
+
+```python
+n = int(input())
+for i in range(n+2, n+12, 2):
+    print(i)
+```
+
+
 
 ===================≠=======================================================================================================
 LOOP:
