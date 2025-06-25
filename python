@@ -3328,6 +3328,78 @@ for i in range(1,a,1):
 	print(" ")
 
 =============================================================
+
+Python Loop Questions
+=====================================
+
+1. Sum of First N Numbers
+-------------------------
+Write a loop to calculate the sum of first `n` natural numbers.
+Example: n = 10 → Output: 55
+
+2. Reverse a String Using Loop
+------------------------------
+Take a string input and reverse it using a loop.
+
+3. Count the Number of Vowels
+-----------------------------
+Loop through a string and count how many vowels it has.
+Example: Input: "Hello World" → Output: 3
+
+4. Factorial of a Number
+------------------------
+Find factorial of a number using a loop.
+Example: n = 5 → Output: 120
+
+5. Print Even Numbers from 1 to N
+---------------------------------
+Print all even numbers from 1 to a given number N using a loop.
+
+6. Find Maximum in a List
+-------------------------
+Use a loop to find the maximum number in a list.
+
+7. Count Digits in a Number
+---------------------------
+Take an integer input and count how many digits it has.
+
+8. Sum of Digits of a Number
+----------------------------
+Take a number and find the sum of its digits using a loop.
+
+9. Check if Number is a Palindrome
+----------------------------------
+Use a loop to check if the input number is the same when reversed.
+
+10. Print Multiplication Table of a Number
+------------------------------------------
+Input: 5 → Output: 5x1=5 to 5x10=50
+
+11. Find the Average of List
+----------------------------
+Find the average of elements in a list using loops only.
+
+12. Find Common Elements Between Two Lists
+------------------------------------------
+Compare two lists using loops and print common elements.
+
+13. Count Uppercase and Lowercase Letters
+-----------------------------------------
+Count how many uppercase and lowercase letters are in a string.
+
+14. Print Numbers in Reverse Order
+----------------------------------
+Input: n = 5 → Output: 5, 4, 3, 2, 1
+
+15. Print Fibonacci Series up to N terms
+----------------------------------------
+Print the Fibonacci sequence up to N terms using a loop
+
+
+Output:
+
+
+====================================================================================================
 FUNCTION:
 =========
 block of code.its only run when it called. You can pass data, known as parameters, into a function.
