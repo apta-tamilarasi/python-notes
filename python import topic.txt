@@ -1,0 +1,2523 @@
+
+1) IMPORT MATH
+======================================
+Definition: Provides mathematical functions and constants including trigonometric,
+logarithmic, exponential functions, and constants like π (pi) and e.
+
+
+1. Square Root and Factorial:
+   Input:
+     import math
+     print(math.sqrt(25))
+     print(math.factorial(5))
+   Output:
+     5.0
+     120
+
+2. Trigonometric Functions:
+   Input:
+     import math
+     angle = 45
+     rad = math.radians(angle)
+     print(f"sin({angle}°): {math.sin(rad):.3f}")
+     print(f"cos({angle}°): {math.cos(rad):.3f}")
+   Output:
+     sin(45°): 0.707
+     cos(45°): 0.707
+
+3. Logarithmic Functions:
+   Input:
+     import math
+     print(f"Natural log of 10: {math.log(10):.3f}")
+     print(f"Log base 10 of 100: {math.log10(100)}")
+   Output:
+     Natural log of 10: 2.303
+     Log base 10 of 100: 2.0
+
+4. Exponential Functions:
+   Input:
+     import math
+     print(f"e^2: {math.exp(2):.3f}")
+     print(f"2^3: {math.pow(2, 3)}")
+   Output:
+     e^2: 7.389
+     2^3: 8.0
+
+5. Rounding Functions:
+   Input:
+     import math
+     print(f"Ceil of 2.3: {math.ceil(2.3)}")
+     print(f"Floor of 2.7: {math.floor(2.7)}")
+     print(f"Truncate -2.7: {math.trunc(-2.7)}")
+   Output:
+     Ceil of 2.3: 3
+     Floor of 2.7: 2
+     Truncate -2.7: -2
+
+6. Distance Calculation:
+   Input:
+     import math
+     x1, y1 = 0, 0
+     x2, y2 = 3, 4
+     distance = math.sqrt((x2-x1)**2 + (y2-y1)**2)
+     print(f"Distance: {distance}")
+   Output:
+     Distance: 5.0
+
+7. Circle Calculations:
+   Input:
+     import math
+     radius = 5
+     area = math.pi * radius**2
+     circumference = 2 * math.pi * radius
+     print(f"Area: {area:.2f}")
+     print(f"Circumference: {circumference:.2f}")
+   Output:
+     Area: 78.54
+     Circumference: 31.42
+
+8. GCD and LCM:
+   Input:
+     import math
+     print(f"GCD of 48 and 60: {math.gcd(48, 60)}")
+     print(f"LCM of 4 and 6: {math.lcm(4, 6)}")
+   Output:
+     GCD of 48 and 60: 12
+     LCM of 4 and 6: 12
+
+9. Angle Conversions:
+   Input:
+     import math
+     degrees = 180
+     radians = math.radians(degrees)
+     print(f"{degrees}° = {radians:.3f} radians")
+   Output:
+     180° = 3.142 radians
+
+10. Constants:
+    Input:
+      import math
+      print(f"Pi: {math.pi}")
+      print(f"Euler's number: {math.e}")
+      print(f"Tau: {math.tau}")
+    Output:
+      Pi: 3.141592653589793
+      Euler's number: 2.718281828459045
+      Tau: 6.283185307179586
+
+======================================
+2) IMPORT RANDOM
+======================================
+Definition: Module for generating pseudo-random numbers, making random selections,
+and shuffling sequences.
+
+10 Examples:
+
+1. Random Integer:
+   Input:
+     import random
+     print(random.randint(1, 100))
+   Output (example):
+     42
+
+2. Random Float:
+   Input:
+     import random
+     print(random.random())
+   Output (example):
+     0.5488135039273248
+
+3. Random Choice:
+   Input:
+     import random
+     fruits = ['apple', 'banana', 'cherry']
+     print(random.choice(fruits))
+   Output (example):
+     banana
+
+4. Random Sample:
+   Input:
+     import random
+     numbers = list(range(1, 11))
+     print(random.sample(numbers, 3))
+   Output (example):
+     [7, 2, 9]
+
+5. Shuffle List:
+   Input:
+     import random
+     cards = ['A', 'K', 'Q', 'J', '10']
+     random.shuffle(cards)
+     print(cards)
+   Output (example):
+     ['J', '10', 'A', 'K', 'Q']
+
+6. Random Uniform:
+   Input:
+     import random
+     print(random.uniform(1.5, 4.5))
+   Output (example):
+     2.718281828459045
+
+7. Random Seed:
+   Input:
+     import random
+     random.seed(42)
+     print(random.randint(1, 100))
+     random.seed(42)
+     print(random.randint(1, 100))
+   Output:
+     82
+     82
+
+8. Weighted Random:
+   Input:
+     import random
+     colors = ['red', 'green', 'blue']
+     weights = [0.5, 0.3, 0.2]
+     print(random.choices(colors, weights, k=3))
+   Output (example):
+     ['red', 'red', 'green']
+
+9. Random Gaussian:
+   Input:
+     import random
+     print(random.gauss(50, 10))
+   Output (example):
+     48.867232
+
+10. Random Bytes:
+    Input:
+      import random
+      print(random.randbytes(4))
+    Output (example):
+      b'\x8d\xf2\xa7\xc3'
+
+======================================
+3) IMPORT DATETIME
+======================================
+Definition: Classes for manipulating dates and times including date, time,
+datetime, and timedelta objects.
+
+10 Examples:
+
+1. Current Date/Time:
+   Input:
+     from datetime import datetime
+     now = datetime.now()
+     print(now)
+   Output (example):
+     2024-01-15 14:30:45.123456
+
+2. Specific Date:
+   Input:
+     from datetime import date
+     d = date(2024, 12, 25)
+     print(d)
+   Output:
+     2024-12-25
+
+3. Date Arithmetic:
+   Input:
+     from datetime import date, timedelta
+     today = date.today()
+     next_week = today + timedelta(days=7)
+     print(f"Today: {today}")
+     print(f"Next week: {next_week}")
+   Output (example):
+     Today: 2024-01-15
+     Next week: 2024-01-22
+
+4. Time Operations:
+   Input:
+     from datetime import time
+     t = time(14, 30, 45)
+     print(f"Time: {t}")
+     print(f"Hour: {t.hour}, Minute: {t.minute}")
+   Output:
+     Time: 14:30:45
+     Hour: 14, Minute: 30
+
+5. Formatting Dates:
+   Input:
+     from datetime import datetime
+     now = datetime.now()
+     formatted = now.strftime("%Y-%m-%d %H:%M:%S")
+     print(formatted)
+   Output (example):
+     2024-01-15 14:30:45
+
+6. Parsing String to Date:
+   Input:
+     from datetime import datetime
+     date_str = "2024-12-25 18:30:00"
+     parsed = datetime.strptime(date_str, "%Y-%m-%d %H:%M:%S")
+     print(parsed)
+   Output:
+     2024-12-25 18:30:00
+
+7. Date Difference:
+   Input:
+     from datetime import date
+     date1 = date(2024, 1, 1)
+     date2 = date(2024, 12, 31)
+     difference = date2 - date1
+     print(f"Days between: {difference.days}")
+   Output:
+     Days between: 365
+
+8. Weekday:
+   Input:
+     from datetime import datetime
+     now = datetime.now()
+     print(f"Weekday (0=Monday): {now.weekday()}")
+   Output (example):
+     Weekday (0=Monday): 0
+
+9. Time Components:
+   Input:
+     from datetime import datetime
+     now = datetime.now()
+     print(f"Year: {now.year}, Month: {now.month}, Day: {now.day}")
+   Output (example):
+     Year: 2024, Month: 1, Day: 15
+
+10. Timestamp:
+    Input:
+      from datetime import datetime
+      now = datetime.now()
+      timestamp = datetime.timestamp(now)
+      print(f"Timestamp: {timestamp}")
+    Output (example):
+      Timestamp: 1705329045.123456
+
+======================================
+4) IMPORT OS
+======================================
+Definition: Provides operating system interface functions for file/directory
+operations and environment variables.
+
+10 Examples:
+
+1. Current Directory:
+   Input:
+     import os
+     print(os.getcwd())
+   Output (example):
+     /home/user/projects
+
+2. List Files:
+   Input:
+     import os
+     files = os.listdir('.')
+     print(f"Files: {files[:3]}...")
+   Output (example):
+     Files: ['main.py', 'data.csv', 'config.json']...
+
+3. Create Directory:
+   Input:
+     import os
+     os.makedirs('test_dir', exist_ok=True)
+     print("Directory created")
+   Output:
+     Directory created
+
+4. Check Existence:
+   Input:
+     import os
+     print(f"test_dir exists: {os.path.exists('test_dir')}")
+   Output:
+     test_dir exists: True
+
+5. Remove Directory:
+   Input:
+     import os
+     os.rmdir('test_dir')
+     print("Directory removed")
+   Output:
+     Directory removed
+
+6. Environment Variables:
+   Input:
+     import os
+     print(f"PATH: {os.environ.get('PATH', 'Not found')[:50]}...")
+   Output (example):
+     PATH: /usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/...
+
+7. File Operations:
+   Input:
+     import os
+     with open('test.txt', 'w') as f:
+         f.write('Hello')
+     print(f"File size: {os.path.getsize('test.txt')} bytes")
+   Output:
+     File size: 5 bytes
+
+8. Path Operations:
+   Input:
+     import os
+     print(f"Is file: {os.path.isfile('test.txt')}")
+     print(f"Is dir: {os.path.isdir('.')}")
+   Output:
+     Is file: True
+     Is dir: True
+
+9. System Info:
+   Input:
+     import os
+     print(f"OS name: {os.name}")
+     print(f"OS details: {os.uname()}")
+   Output (example):
+     OS name: posix
+     OS details: posix.uname_result(sysname='Linux', nodename='...')
+
+10. Remove File:
+    Input:
+      import os
+      os.remove('test.txt')
+      print("File removed")
+    Output:
+      File removed
+
+======================================
+5) IMPORT SYS
+======================================
+Definition: System-specific parameters and functions including command line
+arguments and Python path.
+
+10 Examples:
+
+1. Python Version:
+   Input:
+     import sys
+     print(f"Python version: {sys.version}")
+   Output (example):
+     Python version: 3.9.0 (default, Oct  5 2020, 00:00:00)
+
+2. Platform Info:
+   Input:
+     import sys
+     print(f"Platform: {sys.platform}")
+   Output (example):
+     Platform: linux
+
+3. Command Line Arguments:
+   Input (run: python script.py arg1 arg2):
+     import sys
+     print(f"Script name: {sys.argv[0]}")
+     print(f"Arguments: {sys.argv[1:]}")
+   Output:
+     Script name: script.py
+     Arguments: ['arg1', 'arg2']
+
+4. Exit Program:
+   Input:
+     import sys
+     print("Before exit")
+     sys.exit(0)
+     print("After exit")  # This won't execute
+   Output:
+     Before exit
+
+5. Standard Streams:
+   Input:
+     import sys
+     sys.stdout.write("Hello stdout\n")
+     sys.stderr.write("Hello stderr\n")
+   Output:
+     Hello stdout
+     Hello stderr
+
+6. Python Path:
+   Input:
+     import sys
+     print(f"Python path: {sys.path[:3]}")
+   Output (example):
+     Python path: ['/home/user/projects', '/usr/lib/python39.zip', ...]
+
+7. Recursion Limit:
+   Input:
+     import sys
+     print(f"Recursion limit: {sys.getrecursionlimit()}")
+   Output:
+     Recursion limit: 1000
+
+8. Module Search:
+   Input:
+     import sys
+     print(f"Built-in modules: {list(sys.builtin_module_names)[:5]}")
+   Output:
+     Built-in modules: ['_abc', '_ast', '_codecs', '_collections', ...]
+
+9. Reference Count:
+   Input:
+     import sys
+     obj = object()
+     print(f"Reference count: {sys.getrefcount(obj)}")
+   Output (example):
+     Reference count: 2
+
+10. Byte Order:
+    Input:
+      import sys
+      print(f"Byte order: {sys.byteorder}")
+    Output (example):
+      Byte order: little
+
+======================================
+6) IMPORT RE
+======================================
+Definition: Regular expression operations for pattern matching and text processing.
+
+10 Examples:
+
+1. Search Pattern:
+   Input:
+     import re
+     text = "Contact: email@example.com, phone: 123-456-7890"
+     pattern = r'\d{3}-\d{3}-\d{4}'
+     match = re.search(pattern, text)
+     print(f"Phone found: {match.group()}")
+   Output:
+     Phone found: 123-456-7890
+
+2. Find All Matches:
+   Input:
+     import re
+     text = "apple banana apple orange banana apple"
+     pattern = r'apple'
+     matches = re.findall(pattern, text)
+     print(f"Found 'apple' {len(matches)} times")
+   Output:
+     Found 'apple' 3 times
+
+3. Split by Pattern:
+   Input:
+     import re
+     text = "apple,banana;cherry orange"
+     pattern = r'[,; ]'
+     parts = re.split(pattern, text)
+     print(f"Split parts: {parts}")
+   Output:
+     Split parts: ['apple', 'banana', 'cherry', 'orange']
+
+4. Replace Pattern:
+   Input:
+     import re
+     text = "Price: $99.99, Discount: $20.00"
+     pattern = r'\$\d+\.\d{2}'
+     new_text = re.sub(pattern, '$0.00', text)
+     print(f"New text: {new_text}")
+   Output:
+     New text: Price: $0.00, Discount: $0.00
+
+5. Match Groups:
+   Input:
+     import re
+     text = "Name: John, Age: 30, City: NY"
+     pattern = r'Name: (\w+), Age: (\d+), City: (\w+)'
+     match = re.search(pattern, text)
+     print(f"Name: {match.group(1)}")
+     print(f"Age: {match.group(2)}")
+   Output:
+     Name: John
+     Age: 30
+
+6. Compile Pattern:
+   Input:
+     import re
+     pattern = re.compile(r'\b\w{5}\b')  # 5-letter words
+     text = "hello world python programming"
+     matches = pattern.findall(text)
+     print(f"5-letter words: {matches}")
+   Output:
+     5-letter words: ['hello', 'world']
+
+7. Character Classes:
+   Input:
+     import re
+     text = "A1 B2 C3 D4 E5"
+     pattern = r'[A-C]\d'
+     matches = re.findall(pattern, text)
+     print(f"Matches: {matches}")
+   Output:
+     Matches: ['A1', 'B2', 'C3']
+
+8. Quantifiers:
+   Input:
+     import re
+     text = "aaa aa a aaaa"
+     pattern = r'a{2,3}'
+     matches = re.findall(pattern, text)
+     print(f"Matches: {matches}")
+   Output:
+     Matches: ['aaa', 'aa', 'aaa']
+
+9. Email Validation:
+   Input:
+     import re
+     emails = ["test@example.com", "invalid-email", "user@domain.co.uk"]
+     pattern = r'^[\w\.-]+@[\w\.-]+\.\w+$'
+     for email in emails:
+         if re.match(pattern, email):
+             print(f"Valid: {email}")
+         else:
+             print(f"Invalid: {email}")
+   Output:
+     Valid: test@example.com
+     Invalid: invalid-email
+     Valid: user@domain.co.uk
+
+10. Flags:
+    Input:
+      import re
+      text = "HELLO world Hello WORLD"
+      pattern = r'hello'
+      matches = re.findall(pattern, text, re.IGNORECASE)
+      print(f"Case-insensitive matches: {matches}")
+    Output:
+      Case-insensitive matches: ['HELLO', 'Hello']
+
+======================================
+7) IMPORT JSON
+======================================
+Definition: JSON encoder and decoder for parsing and generating JSON data.
+
+10 Examples:
+
+1. Convert to JSON:
+   Input:
+     import json
+     data = {"name": "John", "age": 30, "city": "NY"}
+     json_str = json.dumps(data)
+     print(json_str)
+   Output:
+     {"name": "John", "age": 30, "city": "NY"}
+
+2. Pretty Print JSON:
+   Input:
+     import json
+     data = {"name": "John", "age": 30, "city": "NY"}
+     pretty = json.dumps(data, indent=2)
+     print(pretty)
+   Output:
+     {
+       "name": "John",
+       "age": 30,
+       "city": "NY"
+     }
+
+3. Parse JSON:
+   Input:
+     import json
+     json_str = '{"name": "John", "age": 30, "city": "NY"}'
+     data = json.loads(json_str)
+     print(f"Name: {data['name']}")
+   Output:
+     Name: John
+
+4. Write to File:
+   Input:
+     import json
+     data = {"name": "John", "age": 30}
+     with open('data.json', 'w') as f:
+         json.dump(data, f)
+     print("Written to file")
+   Output:
+     Written to file
+
+5. Read from File:
+   Input:
+     import json
+     with open('data.json', 'r') as f:
+         data = json.load(f)
+     print(f"Data from file: {data}")
+   Output:
+     Data from file: {'name': 'John', 'age': 30}
+
+6. Sort Keys:
+   Input:
+     import json
+     data = {"z": 1, "a": 2, "m": 3}
+     sorted_json = json.dumps(data, sort_keys=True)
+     print(sorted_json)
+   Output:
+     {"a": 2, "m": 3, "z": 1}
+
+7. Custom Encoder:
+   Input:
+     import json
+     from datetime import datetime
+     
+     class CustomEncoder(json.JSONEncoder):
+         def default(self, obj):
+             if isinstance(obj, datetime):
+                 return obj.isoformat()
+             return super().default(obj)
+     
+     data = {"time": datetime.now(), "name": "test"}
+     json_str = json.dumps(data, cls=CustomEncoder)
+     print(json_str)
+   Output (example):
+     {"time": "2024-01-15T14:30:45.123456", "name": "test"}
+
+8. Parse with Custom Decoder:
+   Input:
+     import json
+     def datetime_decoder(dct):
+         if 'time' in dct:
+             dct['time'] = datetime.fromisoformat(dct['time'])
+         return dct
+     
+     json_str = '{"time": "2024-01-15T14:30:45", "name": "test"}'
+     data = json.loads(json_str, object_hook=datetime_decoder)
+     print(f"Time type: {type(data['time'])}")
+   Output:
+     Time type: <class 'datetime.datetime'>
+
+9. Ensure ASCII:
+   Input:
+     import json
+     data = {"name": "José", "city": "München"}
+     ascii_json = json.dumps(data, ensure_ascii=True)
+     print(ascii_json)
+   Output:
+     {"name": "Jos\\u00e9", "city": "M\\u00fcnchen"}
+
+10. Complex Object:
+    Input:
+      import json
+      data = {
+          "list": [1, 2, 3],
+          "tuple": (4, 5, 6),
+          "boolean": True,
+          "none": None
+      }
+      json_str = json.dumps(data)
+      print(json_str)
+    Output:
+      {"list": [1, 2, 3], "tuple": [4, 5, 6], "boolean": true, "none": null}
+
+======================================
+8) IMPORT COLLECTIONS
+======================================
+Definition: Specialized container datatypes including Counter, defaultdict,
+deque, and namedtuple.
+
+10 Examples:
+
+1. Counter:
+   Input:
+     from collections import Counter
+     text = "apple banana apple orange banana apple"
+     word_count = Counter(text.split())
+     print(word_count)
+   Output:
+     Counter({'apple': 3, 'banana': 2, 'orange': 1})
+
+2. Default Dictionary:
+   Input:
+     from collections import defaultdict
+     grades = defaultdict(list)
+     grades['Alice'].append(85)
+     grades['Alice'].append(90)
+     grades['Bob'].append(78)
+     print(dict(grades))
+   Output:
+     {'Alice': [85, 90], 'Bob': [78]}
+
+3. Deque:
+   Input:
+     from collections import deque
+     queue = deque(['A', 'B', 'C'])
+     queue.append('D')
+     queue.appendleft('Z')
+     print(f"Queue: {list(queue)}")
+   Output:
+     Queue: ['Z', 'A', 'B', 'C', 'D']
+
+4. Named Tuple:
+   Input:
+     from collections import namedtuple
+     Point = namedtuple('Point', ['x', 'y'])
+     p = Point(10, 20)
+     print(f"Point: ({p.x}, {p.y})")
+   Output:
+     Point: (10, 20)
+
+5. Ordered Dictionary:
+   Input:
+     from collections import OrderedDict
+     od = OrderedDict()
+     od['z'] = 1
+     od['a'] = 2
+     od['m'] = 3
+     print(f"OrderedDict: {list(od.items())}")
+   Output:
+     OrderedDict: [('z', 1), ('a', 2), ('m', 3)]
+
+6. ChainMap:
+   Input:
+     from collections import ChainMap
+     dict1 = {'a': 1, 'b': 2}
+     dict2 = {'b': 3, 'c': 4}
+     chain = ChainMap(dict1, dict2)
+     print(f"Value of a: {chain['a']}")
+     print(f"Value of b: {chain['b']}")  # From dict1
+   Output:
+     Value of a: 1
+     Value of b: 2
+
+7. Counter Arithmetic:
+   Input:
+     from collections import Counter
+     c1 = Counter({'a': 3, 'b': 2})
+     c2 = Counter({'a': 1, 'b': 2, 'c': 1})
+     print(f"c1 + c2: {c1 + c2}")
+     print(f"c1 - c2: {c1 - c2}")
+   Output:
+     c1 + c2: Counter({'a': 4, 'b': 4, 'c': 1})
+     c1 - c2: Counter({'a': 2})
+
+8. Defaultdict with int:
+   Input:
+     from collections import defaultdict
+     word_lengths = defaultdict(int)
+     for word in "hello world".split():
+         word_lengths[word] = len(word)
+     print(dict(word_lengths))
+   Output:
+     {'hello': 5, 'world': 5}
+
+9. Deque Rotation:
+   Input:
+     from collections import deque
+     d = deque([1, 2, 3, 4, 5])
+     d.rotate(2)
+     print(f"Rotated: {list(d)}")
+   Output:
+     Rotated: [4, 5, 1, 2, 3]
+
+10. Counter from List:
+    Input:
+      from collections import Counter
+      colors = ['red', 'blue', 'red', 'green', 'blue', 'blue']
+      color_count = Counter(colors)
+      print(f"Most common: {color_count.most_common(2)}")
+    Output:
+      Most common: [('blue', 3), ('red', 2)]
+
+======================================
+9) IMPORT ITERTOOLS
+======================================
+Definition: Iterator tools for efficient looping including permutations,
+combinations, and product operations.
+
+10 Examples:
+
+1. Permutations:
+   Input:
+     import itertools
+     letters = ['A', 'B', 'C']
+     perms = list(itertools.permutations(letters, 2))
+     print(f"Permutations of 2: {perms}")
+   Output:
+     Permutations of 2: [('A', 'B'), ('A', 'C'), ('B', 'A'), ('B', 'C'), ('C', 'A'), ('C', 'B')]
+
+2. Combinations:
+   Input:
+     import itertools
+     letters = ['A', 'B', 'C']
+     combs = list(itertools.combinations(letters, 2))
+     print(f"Combinations of 2: {combs}")
+   Output:
+     Combinations of 2: [('A', 'B'), ('A', 'C'), ('B', 'C')]
+
+3. Cartesian Product:
+   Input:
+     import itertools
+     colors = ['red', 'green']
+     sizes = ['S', 'M', 'L']
+     products = list(itertools.product(colors, sizes))
+     print(f"Products: {products}")
+   Output:
+     Products: [('red', 'S'), ('red', 'M'), ('red', 'L'), ('green', 'S'), ('green', 'M'), ('green', 'L')]
+
+4. Count Iterator:
+   Input:
+     import itertools
+     counter = itertools.count(start=10, step=2)
+     print(f"Count: {next(counter)}, {next(counter)}, {next(counter)}")
+   Output:
+     Count: 10, 12, 14
+
+5. Cycle Iterator:
+   Input:
+     import itertools
+     cycler = itertools.cycle(['A', 'B', 'C'])
+     for _ in range(5):
+         print(next(cycler), end=' ')
+   Output:
+     A B C A B
+
+6. Repeat Iterator:
+   Input:
+     import itertools
+     repeater = itertools.repeat('Hello', 3)
+     print(list(repeater))
+   Output:
+     ['Hello', 'Hello', 'Hello']
+
+7. Chain Iterator:
+   Input:
+     import itertools
+     chained = list(itertools.chain([1, 2], [3, 4, 5], [6, 7]))
+     print(f"Chained: {chained}")
+   Output:
+     Chained: [1, 2, 3, 4, 5, 6, 7]
+
+8. Compress Iterator:
+   Input:
+     import itertools
+     data = ['A', 'B', 'C', 'D', 'E']
+     selectors = [True, False, True, False, True]
+     compressed = list(itertools.compress(data, selectors))
+     print(f"Compressed: {compressed}")
+   Output:
+     Compressed: ['A', 'C', 'E']
+
+9. GroupBy:
+   Input:
+     import itertools
+     data = [1, 1, 2, 3, 3, 3, 4, 4]
+     for key, group in itertools.groupby(data):
+         print(f"{key}: {list(group)}")
+   Output:
+     1: [1, 1]
+     2: [2]
+     3: [3, 3, 3]
+     4: [4, 4]
+
+10. Tee Iterator:
+    Input:
+      import itertools
+      original = [1, 2, 3]
+      a, b, c = itertools.tee(original, 3)
+      print(f"Tee 1: {list(a)}")
+      print(f"Tee 2: {list(b)}")
+      print(f"Tee 3: {list(c)}")
+    Output:
+      Tee 1: [1, 2, 3]
+      Tee 2: [1, 2, 3]
+      Tee 3: [1, 2, 3]
+
+======================================
+10) IMPORT FUNCTOOLS
+======================================
+Definition: Higher-order functions and operations on callable objects.
+
+10 Examples:
+
+1. Reduce Function:
+   Input:
+     import functools
+     numbers = [1, 2, 3, 4, 5]
+     product = functools.reduce(lambda x, y: x * y, numbers)
+     print(f"Product: {product}")
+   Output:
+     Product: 120
+
+2. Partial Function:
+   Input:
+     import functools
+     def power(base, exponent):
+         return base ** exponent
+     
+     square = functools.partial(power, exponent=2)
+     cube = functools.partial(power, exponent=3)
+     print(f"Square of 5: {square(5)}")
+     print(f"Cube of 3: {cube(3)}")
+   Output:
+     Square of 5: 25
+     Cube of 3: 27
+
+3. LRU Cache:
+   Input:
+     import functools
+     
+     @functools.lru_cache(maxsize=128)
+     def fibonacci(n):
+         if n < 2:
+             return n
+         return fibonacci(n-1) + fibonacci(n-2)
+     
+     print(f"Fibonacci(10): {fibonacci(10)}")
+     print(f"Cache info: {fibonacci.cache_info()}")
+   Output:
+     Fibonacci(10): 55
+     Cache info: CacheInfo(hits=8, misses=11, maxsize=128, currsize=11)
+
+4. Total Ordering:
+   Input:
+     import functools
+     
+     @functools.total_ordering
+     class Student:
+         def __init__(self, name, grade):
+             self.name = name
+             self.grade = grade
+         
+         def __eq__(self, other):
+             return self.grade == other.grade
+         
+         def __lt__(self, other):
+             return self.grade < other.grade
+     
+     s1 = Student("Alice", 85)
+     s2 = Student("Bob", 90)
+     print(f"Alice < Bob: {s1 < s2}")
+     print(f"Alice >= Bob: {s1 >= s2}")
+   Output:
+     Alice < Bob: True
+     Alice >= Bob: False
+
+5. Wraps Decorator:
+   Input:
+     import functools
+     
+     def my_decorator(func):
+         @functools.wraps(func)
+         def wrapper(*args, **kwargs):
+             print(f"Calling {func.__name__}")
+             return func(*args, **kwargs)
+         return wrapper
+     
+     @my_decorator
+     def say_hello(name):
+         """Greet someone"""
+         return f"Hello, {name}"
+     
+     print(say_hello("John"))
+     print(f"Function name: {say_hello.__name__}")
+   Output:
+     Calling say_hello
+     Hello, John
+     Function name: say_hello
+
+6. Cmp to Key:
+   Input:
+     import functools
+     
+     def compare(x, y):
+         return (x > y) - (x < y)
+     
+     numbers = [5, 1, 3, 2, 4]
+     sorted_nums = sorted(numbers, key=functools.cmp_to_key(compare))
+     print(f"Sorted: {sorted_nums}")
+   Output:
+     Sorted: [1, 2, 3, 4, 5]
+
+7. Singledispatch:
+   Input:
+     import functools
+     
+     @functools.singledispatch
+     def process(arg):
+         return f"Default: {arg}"
+     
+     @process.register(int)
+     def _(arg):
+         return f"Integer: {arg}"
+     
+     @process.register(str)
+     def _(arg):
+         return f"String: {arg.upper()}"
+     
+     print(f"Process int: {process(42)}")
+     print(f"Process str: {process('hello')}")
+     print(f"Process float: {process(3.14)}")
+   Output:
+     Process int: Integer: 42
+     Process str: String: HELLO
+     Process float: Default: 3.14
+
+8. Reduce with Initializer:
+   Input:
+     import functools
+     numbers = [1, 2, 3]
+     sum_result = functools.reduce(lambda x, y: x + y, numbers, 100)
+     print(f"Sum with initializer: {sum_result}")
+   Output:
+     Sum with initializer: 106
+
+9. Cache (Python 3.9+):
+   Input:
+     import functools
+     
+     @functools.cache
+     def factorial(n):
+         return 1 if n <= 1 else n * factorial(n-1)
+     
+     print(f"Factorial(10): {factorial(10)}")
+     print(f"Factorial(5): {factorial(5)}")  # From cache
+   Output:
+     Factorial(10): 3628800
+     Factorial(5): 120
+
+10. Partialmethod:
+    Input:
+      import functools
+      
+      class Cell:
+          def __init__(self):
+              self._alive = False
+          
+          @property
+          def alive(self):
+              return self._alive
+          
+          def set_state(self, state):
+              self._alive = state
+          
+          set_alive = functools.partialmethod(set_state, True)
+          set_dead = functools.partialmethod(set_state, False)
+      
+      cell = Cell()
+      cell.set_alive()
+      print(f"Cell alive: {cell.alive}")
+      cell.set_dead()
+      print(f"Cell alive: {cell.alive}")
+    Output:
+      Cell alive: True
+      Cell alive: False
+
+======================================
+11) IMPORT PATHLIB
+======================================
+Definition: Object-oriented filesystem paths for modern path handling.
+
+10 Examples:
+
+1. Create Path:
+   Input:
+     from pathlib import Path
+     p = Path('folder/file.txt')
+     print(f"Path: {p}")
+   Output:
+     Path: folder/file.txt
+
+2. Home Directory:
+   Input:
+     from pathlib import Path
+     home = Path.home()
+     print(f"Home: {home}")
+   Output (example):
+     Home: /home/user
+
+3. Current Directory:
+   Input:
+     from pathlib import Path
+     cwd = Path.cwd()
+     print(f"Current: {cwd}")
+   Output (example):
+     Current: /home/user/projects
+
+4. Path Parts:
+   Input:
+     from pathlib import Path
+     p = Path('/home/user/file.txt')
+     print(f"Name: {p.name}")
+     print(f"Stem: {p.stem}")
+     print(f"Suffix: {p.suffix}")
+     print(f"Parent: {p.parent}")
+   Output:
+     Name: file.txt
+     Stem: file
+     Suffix: .txt
+     Parent: /home/user
+
+5. Join Paths:
+   Input:
+     from pathlib import Path
+     new_path = Path('folder') / 'subfolder' / 'file.txt'
+     print(f"Joined: {new_path}")
+   Output:
+     Joined: folder/subfolder/file.txt
+
+6. Check Existence:
+   Input:
+     from pathlib import Path
+     p = Path('some_file.txt')
+     print(f"Exists: {p.exists()}")
+     print(f"Is file: {p.is_file()}")
+     print(f"Is dir: {p.is_dir()}")
+   Output:
+     Exists: False
+     Is file: False
+     Is dir: False
+
+7. Create File:
+   Input:
+     from pathlib import Path
+     temp_file = Path('temp.txt')
+     temp_file.write_text('Hello World')
+     print(f"File created: {temp_file.exists()}")
+   Output:
+     File created: True
+
+8. Read File:
+   Input:
+     from pathlib import Path
+     temp_file = Path('temp.txt')
+     content = temp_file.read_text()
+     print(f"Content: {content}")
+   Output:
+     Content: Hello World
+
+9. List Files:
+   Input:
+     from pathlib import Path
+     print("Python files in current directory:")
+     for file in Path('.').glob('*.py'):
+         print(f"  {file}")
+   Output (example):
+     Python files in current directory:
+       main.py
+       utils.py
+
+10. Cleanup:
+    Input:
+      from pathlib import Path
+      temp_file = Path('temp.txt')
+      temp_file.unlink()
+      print(f"File deleted: {not temp_file.exists()}")
+    Output:
+      File deleted: True
+
+======================================
+12) IMPORT TYPING
+======================================
+Definition: Support for type hints and static type checking.
+
+10 Examples:
+
+1. Basic Type Hints:
+   Input:
+     from typing import List, Dict
+     
+     def greet(name: str) -> str:
+         return f"Hello, {name}"
+     
+     print(greet("John"))
+   Output:
+     Hello, John
+
+2. List Type:
+   Input:
+     from typing import List
+     
+     def double_numbers(numbers: List[int]) -> List[int]:
+         return [n * 2 for n in numbers]
+     
+     print(double_numbers([1, 2, 3]))
+   Output:
+     [2, 4, 6]
+
+3. Dict Type:
+   Input:
+     from typing import Dict, Tuple
+     
+     def get_stats(data: Dict[str, int]) -> Tuple[int, float]:
+         total = sum(data.values())
+         average = total / len(data)
+         return total, average
+     
+     print(get_stats({"a": 10, "b": 20}))
+   Output:
+     (30, 15.0)
+
+4. Optional Type:
+   Input:
+     from typing import Optional
+     
+     def find_user(user_id: int) -> Optional[str]:
+         users = {1: "Alice", 2: "Bob"}
+         return users.get(user_id)
+     
+     print(find_user(1))
+     print(find_user(99))
+   Output:
+     Alice
+     None
+
+5. Union Type:
+   Input:
+     from typing import Union
+     
+     def process_input(value: Union[int, str]) -> str:
+         return str(value)
+     
+     print(process_input(42))
+     print(process_input("hello"))
+   Output:
+     42
+     hello
+
+6. TypeVar:
+   Input:
+     from typing import TypeVar, List
+     
+     T = TypeVar('T')
+     def first_item(items: List[T]) -> T:
+         return items[0]
+     
+     print(first_item([1, 2, 3]))
+     print(first_item(["a", "b", "c"]))
+   Output:
+     1
+     a
+
+7. Callable Type:
+   Input:
+     from typing import Callable
+     
+     def apply_func(func: Callable[[int, int], int], a: int, b: int) -> int:
+         return func(a, b)
+     
+     print(apply_func(lambda x, y: x + y, 5, 3))
+   Output:
+     8
+
+8. Any Type:
+   Input:
+     from typing import Any
+     
+     def accept_anything(value: Any) -> Any:
+         return value
+     
+     print(accept_anything(42))
+     print(accept_anything([1, 2, 3]))
+   Output:
+     42
+     [1, 2, 3]
+
+9. NewType:
+   Input:
+     from typing import NewType
+     
+     UserId = NewType('UserId', int)
+     user_id = UserId(42)
+     print(f"User ID: {user_id}")
+     print(f"Type: {type(user_id)}")
+   Output:
+     User ID: 42
+     Type: <class 'int'>
+
+10. Literal:
+    Input:
+      from typing import Literal
+      
+      def set_direction(direction: Literal["left", "right", "up", "down"]) -> str:
+          return f"Moving {direction}"
+      
+      print(set_direction("left"))
+    Output:
+      Moving left
+
+======================================
+13) IMPORT NUMPY AS NP
+======================================
+Definition: Numerical computing with arrays and matrices (requires installation).
+
+10 Examples:
+
+1. Create Array:
+   Input:
+     import numpy as np
+     arr = np.array([1, 2, 3, 4, 5])
+     print(f"Array: {arr}")
+   Output:
+     Array: [1 2 3 4 5]
+
+2. Array Operations:
+   Input:
+     import numpy as np
+     arr1 = np.array([1, 2, 3])
+     arr2 = np.array([4, 5, 6])
+     print(f"Addition: {arr1 + arr2}")
+     print(f"Multiplication: {arr1 * 2}")
+   Output:
+     Addition: [5 7 9]
+     Multiplication: [2 4 6]
+
+3. Multi-dimensional Array:
+   Input:
+     import numpy as np
+     matrix = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+     print(f"Matrix:\n{matrix}")
+     print(f"Shape: {matrix.shape}")
+   Output:
+     Matrix:
+     [[1 2 3]
+      [4 5 6]
+      [7 8 9]]
+     Shape: (3, 3)
+
+4. Array Creation:
+   Input:
+     import numpy as np
+     zeros = np.zeros((3, 3))
+     ones = np.ones((2, 4))
+     range_arr = np.arange(0, 10, 2)
+     print(f"Zeros:\n{zeros}")
+     print(f"Range: {range_arr}")
+   Output:
+     Zeros:
+     [[0. 0. 0.]
+      [0. 0. 0.]
+      [0. 0. 0.]]
+     Range: [0 2 4 6 8]
+
+5. Statistics:
+   Input:
+     import numpy as np
+     data = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+     print(f"Mean: {np.mean(data)}")
+     print(f"Median: {np.median(data)}")
+     print(f"Std: {np.std(data)}")
+   Output:
+     Mean: 5.5
+     Median: 5.5
+     Std: 2.8722813232690143
+
+6. Reshape Array:
+   Input:
+     import numpy as np
+     arr = np.arange(12)
+     reshaped = arr.reshape(3, 4)
+     print(f"Reshaped:\n{reshaped}")
+   Output:
+     Reshaped:
+     [[ 0  1  2  3]
+      [ 4  5  6  7]
+      [ 8  9 10 11]]
+
+7. Indexing/Slicing:
+   Input:
+     import numpy as np
+     matrix = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+     print(f"Row 0: {matrix[0]}")
+     print(f"Column 1: {matrix[:, 1]}")
+     print(f"Element (1,2): {matrix[1, 2]}")
+   Output:
+     Row 0: [1 2 3]
+     Column 1: [2 5 8]
+     Element (1,2): 6
+
+8. Mathematical Functions:
+   Input:
+     import numpy as np
+     angles = np.array([0, 30, 45, 60, 90])
+     radians = np.radians(angles)
+     print(f"Sin: {np.sin(radians)}")
+   Output:
+     Sin: [0.         0.5        0.70710678 0.8660254  1.        ]
+
+9. Linear Algebra:
+   Input:
+     import numpy as np
+     a = np.array([[1, 2], [3, 4]])
+     b = np.array([[5, 6], [7, 8]])
+     dot_product = np.dot(a, b)
+     print(f"Dot product:\n{dot_product}")
+   Output:
+     Dot product:
+     [[19 22]
+      [43 50]]
+
+10. Random Numbers:
+    Input:
+      import numpy as np
+      random_arr = np.random.rand(3, 3)
+      random_int = np.random.randint(1, 100, size=5)
+      print(f"Random 3x3:\n{random_arr}")
+      print(f"Random ints: {random_int}")
+    Output (example):
+      Random 3x3:
+      [[0.5488135  0.71518937 0.60276338]
+       [0.54488318 0.4236548  0.64589411]
+       [0.43758721 0.891773   0.96366276]]
+      Random ints: [42 17 88 91 23]
+
+======================================
+14) IMPORT PANDAS AS PD
+======================================
+Definition: Data analysis library with DataFrames (requires installation).
+
+10 Examples:
+
+1. Create DataFrame:
+   Input:
+     import pandas as pd
+     data = {'Name': ['Alice', 'Bob', 'Charlie'],
+             'Age': [25, 30, 35],
+             'City': ['NY', 'LA', 'Chicago']}
+     df = pd.DataFrame(data)
+     print(df)
+   Output:
+          Name  Age     City
+     0    Alice   25       NY
+     1      Bob   30       LA
+     2  Charlie   35  Chicago
+
+2. Basic DataFrame Info:
+   Input:
+     import pandas as pd
+     data = {'Name': ['Alice', 'Bob', 'Charlie'],
+             'Age': [25, 30, 35]}
+     df = pd.DataFrame(data)
+     print(f"Shape: {df.shape}")
+     print(f"Columns: {df.columns.tolist()}")
+     print(f"Info:\n{df.info()}")
+   Output:
+     Shape: (3, 2)
+     Columns: ['Name', 'Age']
+     Info:
+     <class 'pandas.core.frame.DataFrame'>
+     ...
+
+3. DataFrame Selection:
+   Input:
+     import pandas as pd
+     data = {'Name': ['Alice', 'Bob', 'Charlie'],
+             'Age': [25, 30, 35]}
+     df = pd.DataFrame(data)
+     print(f"Names: {df['Name'].tolist()}")
+     print(f"Age > 28:\n{df[df['Age'] > 28]}")
+   Output:
+     Names: ['Alice', 'Bob', 'Charlie']
+     Age > 28:
+         Name  Age
+     1    Bob   30
+     2  Charlie   35
+
+4. Statistics:
+   Input:
+     import pandas as pd
+     data = {'Age': [25, 30, 35, 40, 45]}
+     df = pd.DataFrame(data)
+     print(f"Mean Age: {df['Age'].mean()}")
+     print(f"Max Age: {df['Age'].max()}")
+     print(f"Describe:\n{df.describe()}")
+   Output:
+     Mean Age: 35.0
+     Max Age: 45
+     Describe:
+                Age
+     count   5.000000
+     mean   35.000000
+     std     7.905694
+     min    25.000000
+     25%    30.000000
+     50%    35.000000
+     75%    40.000000
+     max    45.000000
+
+5. GroupBy:
+   Input:
+     import pandas as pd
+     sales = {'Product': ['A', 'B', 'A', 'B', 'A'],
+              'Sales': [100, 150, 200, 120, 180]}
+     sales_df = pd.DataFrame(sales)
+     grouped = sales_df.groupby('Product')['Sales'].sum()
+     print(f"Grouped Sales:\n{grouped}")
+   Output:
+     Grouped Sales:
+     Product
+     A    480
+     B    270
+     Name: Sales, dtype: int64
+
+6. Missing Data:
+   Input:
+     import pandas as pd
+     df = pd.DataFrame({'A': [1, 2, None], 'B': [4, None, 6]})
+     print(f"With NaN:\n{df}")
+     print(f"Is null:\n{df.isnull()}")
+   Output:
+     With NaN:
+          A    B
+     0  1.0  4.0
+     1  2.0  NaN
+     2  NaN  6.0
+     Is null:
+           A      B
+     0  False  False
+     1  False   True
+     2   True  False
+
+7. Apply Function:
+   Input:
+     import pandas as pd
+     df = pd.DataFrame({'Age': [25, 30, 35]})
+     df['Age_Next_Year'] = df['Age'].apply(lambda x: x + 1)
+     print(df)
+   Output:
+        Age  Age_Next_Year
+     0   25             26
+     1   30             31
+     2   35             36
+
+8. Pivot Table:
+   Input:
+     import pandas as pd
+     data = {'Date': ['2024-01', '2024-01', '2024-02', '2024-02'],
+             'Product': ['A', 'B', 'A', 'B'],
+             'Sales': [100, 150, 200, 120]}
+     sales_df = pd.DataFrame(data)
+     pivot = sales_df.pivot_table(values='Sales', index='Date', columns='Product')
+     print(f"Pivot Table:\n{pivot}")
+   Output:
+     Pivot Table:
+     Product      A      B
+     Date                
+     2024-01  100.0  150.0
+     2024-02  200.0  120.0
+
+9. Merge DataFrames:
+   Input:
+     import pandas as pd
+     df1 = pd.DataFrame({'ID': [1, 2, 3], 'Name': ['A', 'B', 'C']})
+     df2 = pd.DataFrame({'ID': [2, 3, 4], 'Score': [85, 90, 95]})
+     merged = pd.merge(df1, df2, on='ID', how='inner')
+     print(f"Merged:\n{merged}")
+   Output:
+        ID Name  Score
+     0   2    B     85
+     1   3    C     90
+
+10. Read/Write CSV:
+    Input:
+      import pandas as pd
+      # Create sample data
+      df = pd.DataFrame({'Name': ['Alice', 'Bob'], 'Age': [25, 30]})
+      # Write to CSV
+      df.to_csv('sample.csv', index=False)
+      # Read from CSV
+      df_read = pd.read_csv('sample.csv')
+      print(df_read)
+    Output:
+          Name  Age
+     0    Alice   25
+     1      Bob   30
+
+======================================
+15) IMPORT MATPLOTLIB.PYPLOT AS PLT
+======================================
+Definition: Plotting library for data visualization (requires installation).
+
+10 Examples:
+
+1. Basic Line Plot:
+   Input:
+     import matplotlib.pyplot as plt
+     x = [1, 2, 3, 4, 5]
+     y = [2, 4, 6, 8, 10]
+     plt.plot(x, y)
+     plt.title('Simple Line Plot')
+     plt.xlabel('X-axis')
+     plt.ylabel('Y-axis')
+     plt.show()
+   Output: [Shows a line plot]
+
+2. Multiple Lines:
+   Input:
+     import matplotlib.pyplot as plt
+     import numpy as np
+     x = np.linspace(0, 10, 100)
+     y1 = np.sin(x)
+     y2 = np.cos(x)
+     plt.plot(x, y1, label='sin(x)')
+     plt.plot(x, y2, label='cos(x)')
+     plt.legend()
+     plt.grid(True)
+     plt.title('Trigonometric Functions')
+     plt.show()
+   Output: [Shows plot with two lines]
+
+3. Scatter Plot:
+   Input:
+     import matplotlib.pyplot as plt
+     import numpy as np
+     x = np.random.randn(100)
+     y = np.random.randn(100)
+     colors = np.random.rand(100)
+     sizes = 1000 * np.random.rand(100)
+     plt.scatter(x, y, c=colors, s=sizes, alpha=0.5)
+     plt.title('Scatter Plot')
+     plt.show()
+   Output: [Shows scatter plot]
+
+4. Bar Chart:
+   Input:
+     import matplotlib.pyplot as plt
+     categories = ['A', 'B', 'C', 'D']
+     values = [10, 25, 15, 30]
+     plt.bar(categories, values, color=['red', 'green', 'blue', 'orange'])
+     plt.title('Bar Chart')
+     plt.show()
+   Output: [Shows bar chart]
+
+5. Histogram:
+   Input:
+     import matplotlib.pyplot as plt
+     import numpy as np
+     data = np.random.randn(1000)
+     plt.hist(data, bins=30, edgecolor='black')
+     plt.title('Histogram')
+     plt.xlabel('Value')
+     plt.ylabel('Frequency')
+     plt.show()
+   Output: [Shows histogram]
+
+6. Pie Chart:
+   Input:
+     import matplotlib.pyplot as plt
+     labels = ['Python', 'Java', 'C++', 'JavaScript']
+     sizes = [40, 25, 20, 15]
+     plt.pie(sizes, labels=labels, autopct='%1.1f%%')
+     plt.title('Programming Languages')
+     plt.show()
+   Output: [Shows pie chart]
+
+7. Subplots:
+   Input:
+     import matplotlib.pyplot as plt
+     import numpy as np
+     fig, axes = plt.subplots(2, 2, figsize=(10, 8))
+     
+     x = np.linspace(0, 10, 100)
+     axes[0, 0].plot(x, np.sin(x))
+     axes[0, 0].set_title('Sin(x)')
+     
+     axes[0, 1].plot(x, np.cos(x), 'r--')
+     axes[0, 1].set_title('Cos(x)')
+     
+     axes[1, 0].bar(['A', 'B', 'C'], [10, 20, 15])
+     axes[1, 0].set_title('Bar Chart')
+     
+     axes[1, 1].scatter(np.random.rand(50), np.random.rand(50))
+     axes[1, 1].set_title('Scatter')
+     
+     plt.tight_layout()
+     plt.show()
+   Output: [Shows 2x2 grid of plots]
+
+8. 3D Plot:
+   Input:
+     import matplotlib.pyplot as plt
+     from mpl_toolkits.mplot3d import Axes3D
+     import numpy as np
+     
+     fig = plt.figure()
+     ax = fig.add_subplot(111, projection='3d')
+     x = np.random.rand(100)
+     y = np.random.rand(100)
+     z = np.random.rand(100)
+     ax.scatter(x, y, z)
+     ax.set_xlabel('X')
+     ax.set_ylabel('Y')
+     ax.set_zlabel('Z')
+     plt.title('3D Scatter Plot')
+     plt.show()
+   Output: [Shows 3D plot]
+
+9. Box Plot:
+   Input:
+     import matplotlib.pyplot as plt
+     import numpy as np
+     data = [np.random.normal(0, std, 100) for std in range(1, 4)]
+     plt.boxplot(data, labels=['Set 1', 'Set 2', 'Set 3'])
+     plt.title('Box Plot')
+     plt.show()
+   Output: [Shows box plot]
+
+10. Heatmap:
+    Input:
+      import matplotlib.pyplot as plt
+      import numpy as np
+      data = np.random.rand(10, 10)
+      plt.imshow(data, cmap='hot', interpolation='nearest')
+      plt.colorbar()
+      plt.title('Heatmap')
+      plt.show()
+    Output: [Shows heatmap]
+
+======================================
+16) IMPORT REQUESTS
+======================================
+Definition: HTTP library for making web requests (requires installation).
+
+10 Examples:
+
+1. GET Request:
+   Input:
+     import requests
+     response = requests.get('https://api.github.com')
+     print(f"Status: {response.status_code}")
+     print(f"Content-Type: {response.headers['content-type']}")
+   Output (example):
+     Status: 200
+     Content-Type: application/json; charset=utf-8
+
+2. JSON Response:
+   Input:
+     import requests
+     response = requests.get('https://api.github.com/users/octocat')
+     data = response.json()
+     print(f"User: {data.get('login')}")
+     print(f"Name: {data.get('name')}")
+   Output (example):
+     User: octocat
+     Name: The Octocat
+
+3. Query Parameters:
+   Input:
+     import requests
+     params = {'q': 'python', 'page': 1}
+     response = requests.get('https://httpbin.org/get', params=params)
+     print(f"URL with params: {response.url}")
+   Output:
+     URL with params: https://httpbin.org/get?q=python&page=1
+
+4. POST Request:
+   Input:
+     import requests
+     data = {'username': 'test', 'password': 'secret'}
+     response = requests.post('https://httpbin.org/post', data=data)
+     print(f"POST response status: {response.status_code}")
+   Output:
+     POST response status: 200
+
+5. JSON POST:
+   Input:
+     import requests
+     json_data = {'key1': 'value1', 'key2': 'value2'}
+     response = requests.post('https://httpbin.org/post', json=json_data)
+     print(f"JSON data sent: {response.json()['json']}")
+   Output:
+     JSON data sent: {'key1': 'value1', 'key2': 'value2'}
+
+6. Custom Headers:
+   Input:
+     import requests
+     headers = {'User-Agent': 'MyApp/1.0', 'Authorization': 'Bearer token123'}
+     response = requests.get('https://httpbin.org/headers', headers=headers)
+     print(f"Headers sent: {response.json()['headers']}")
+   Output (example):
+     Headers sent: {'User-Agent': 'MyApp/1.0', 'Authorization': 'Bearer token123', ...}
+
+7. Timeout:
+   Input:
+     import requests
+     try:
+         response = requests.get('https://httpbin.org/delay/5', timeout=2)
+     except requests.exceptions.Timeout:
+         print("Request timed out after 2 seconds")
+   Output:
+     Request timed out after 2 seconds
+
+8. Error Handling:
+   Input:
+     import requests
+     try:
+         response = requests.get('https://httpbin.org/status/404')
+         response.raise_for_status()
+     except requests.exceptions.HTTPError as err:
+         print(f"HTTP Error: {err}")
+   Output:
+     HTTP Error: 404 Client Error: NOT FOUND for url: https://httpbin.org/status/404
+
+9. Session:
+   Input:
+     import requests
+     session = requests.Session()
+     session.headers.update({'User-Agent': 'MyApp'})
+     response1 = session.get('https://httpbin.org/cookies/set/sessioncookie/123456789')
+     response2 = session.get('https://httpbin.org/cookies')
+     print(f"Session cookies: {response2.json()['cookies']}")
+   Output:
+     Session cookies: {'sessioncookie': '123456789'}
+
+10. Download File:
+    Input:
+      import requests
+      url = 'https://www.python.org/static/img/python-logo.png'
+      response = requests.get(url)
+      with open('python_logo.png', 'wb') as f:
+          f.write(response.content)
+      print(f"File downloaded: {len(response.content)} bytes")
+    Output (example):
+      File downloaded: 22933 bytes
+
+======================================
+17) IMPORT FLASK
+======================================
+Definition: Web framework for building web applications (requires installation).
+
+10 Examples:
+
+1. Basic Flask App:
+   Input (app.py):
+     from flask import Flask
+     app = Flask(__name__)
+     
+     @app.route('/')
+     def home():
+         return "Hello, Flask!"
+     
+     if __name__ == '__main__':
+         app.run(debug=True)
+   Output (run: python app.py):
+     * Running on http://127.0.0.1:5000
+   Browser output when visiting http://127.0.0.1:5000:
+     Hello, Flask!
+
+2. Route with Variable:
+   Input:
+     from flask import Flask
+     app = Flask(__name__)
+     
+     @app.route('/user/<username>')
+     def show_user(username):
+         return f"User: {username}"
+     
+     if __name__ == '__main__':
+         app.run(debug=True)
+   Output (visit: http://127.0.0.1:5000/user/John):
+     User: John
+
+3. HTTP Methods:
+   Input:
+     from flask import Flask, request
+     app = Flask(__name__)
+     
+     @app.route('/login', methods=['GET', 'POST'])
+     def login():
+         if request.method == 'POST':
+             username = request.form['username']
+             return f"Welcome {username}!"
+         return '''
+             <form method="post">
+                 <input type="text" name="username">
+                 <input type="submit" value="Login">
+             </form>
+         '''
+     
+     if __name__ == '__main__':
+         app.run(debug=True)
+   Output: Shows login form
+
+4. JSON Response:
+   Input:
+     from flask import Flask, jsonify
+     app = Flask(__name__)
+     
+     @app.route('/api/data')
+     def get_data():
+         data = {"name": "John", "age": 30, "city": "NY"}
+         return jsonify(data)
+     
+     if __name__ == '__main__':
+         app.run(debug=True)
+   Output (visit: http://127.0.0.1:5000/api/data):
+     {"name":"John","age":30,"city":"NY"}
+
+5. Template Rendering:
+   Input (templates/hello.html):
+     <!DOCTYPE html>
+     <html>
+     <head><title>Hello</title></head>
+     <body><h1>Hello, {{ name }}!</h1></body>
+     </html>
+   
+   Input (app.py):
+     from flask import Flask, render_template
+     app = Flask(__name__)
+     
+     @app.route('/hello/<name>')
+     def hello(name):
+         return render_template('hello.html', name=name)
+     
+     if __name__ == '__main__':
+         app.run(debug=True)
+   Output (visit: http://127.0.0.1:5000/hello/John):
+     Shows HTML page with "Hello, John!"
+
+6. Session Management:
+   Input:
+     from flask import Flask, session, redirect, url_for
+     import os
+     app = Flask(__name__)
+     app.secret_key = os.urandom(24)
+     
+     @app.route('/setsession')
+     def set_session():
+         session['user'] = 'john'
+         return "Session set"
+     
+     @app.route('/getsession')
+     def get_session():
+         return session.get('user', 'No session')
+     
+     if __name__ == '__main__':
+         app.run(debug=True)
+   Output: Session management
+
+7. Redirect:
+   Input:
+     from flask import Flask, redirect, url_for
+     app = Flask(__name__)
+     
+     @app.route('/')
+     def home():
+         return "Home Page"
+     
+     @app.route('/old')
+     def old_route():
+         return redirect(url_for('home'))
+     
+     if __name__ == '__main__':
+         app.run(debug=True)
+   Output: Redirects from /old to /
+
+8. Error Handling:
+   Input:
+     from flask import Flask
+     app = Flask(__name__)
+     
+     @app.route('/')
+     def home():
+         return "Home"
+     
+     @app.errorhandler(404)
+     def page_not_found(error):
+         return "Page not found", 404
+     
+     if __name__ == '__main__':
+         app.run(debug=True)
+   Output (visit non-existent page):
+     Page not found
+
+9. Before Request:
+   Input:
+     from flask import Flask, request
+     app = Flask(__name__)
+     
+     @app.before_request
+     def before_each_request():
+         print(f"Request to: {request.path}")
+     
+     @app.route('/')
+     def home():
+         return "Home"
+     
+     if __name__ == '__main__':
+         app.run(debug=True)
+   Output (console when visiting /):
+     Request to: /
+
+10. File Upload:
+    Input:
+      from flask import Flask, request
+      import os
+      app = Flask(__name__)
+      
+      @app.route('/upload', methods=['POST'])
+      def upload_file():
+          if 'file' not in request.files:
+              return "No file part"
+          file = request.files['file']
+          if file.filename == '':
+              return "No selected file"
+          file.save(f"uploads/{file.filename}")
+          return "File uploaded successfully"
+      
+      if __name__ == '__main__':
+          os.makedirs('uploads', exist_ok=True)
+          app.run(debug=True)
+    Output: File upload endpoint
+
+======================================
+18) IMPORT SQLITE3
+======================================
+Definition: SQLite database interface for embedded SQL database operations.
+
+10 Examples:
+
+1. Connect to Database:
+   Input:
+     import sqlite3
+     conn = sqlite3.connect('example.db')
+     print("Connected to database")
+     conn.close()
+   Output:
+     Connected to database
+
+2. Create Table:
+   Input:
+     import sqlite3
+     conn = sqlite3.connect('example.db')
+     cursor = conn.cursor()
+     cursor.execute('''
+         CREATE TABLE IF NOT EXISTS users (
+             id INTEGER PRIMARY KEY AUTOINCREMENT,
+             name TEXT NOT NULL,
+             age INTEGER
+         )
+     ''')
+     print("Table created")
+     conn.close()
+   Output:
+     Table created
+
+3. Insert Data:
+   Input:
+     import sqlite3
+     conn = sqlite3.connect('example.db')
+     cursor = conn.cursor()
+     cursor.execute("INSERT INTO users (name, age) VALUES (?, ?)", ('Alice', 25))
+     cursor.execute("INSERT INTO users (name, age) VALUES (?, ?)", ('Bob', 30))
+     conn.commit()
+     print("Data inserted")
+     conn.close()
+   Output:
+     Data inserted
+
+4. Query Data:
+   Input:
+     import sqlite3
+     conn = sqlite3.connect('example.db')
+     cursor = conn.cursor()
+     cursor.execute("SELECT * FROM users")
+     rows = cursor.fetchall()
+     for row in rows:
+         print(row)
+     conn.close()
+   Output:
+     (1, 'Alice', 25)
+     (2, 'Bob', 30)
+
+5. Query with Condition:
+   Input:
+     import sqlite3
+     conn = sqlite3.connect('example.db')
+     cursor = conn.cursor()
+     cursor.execute("SELECT name, age FROM users WHERE age > 25")
+     adults = cursor.fetchall()
+     for user in adults:
+         print(user)
+     conn.close()
+   Output:
+     ('Bob', 30)
+
+6. Update Data:
+   Input:
+     import sqlite3
+     conn = sqlite3.connect('example.db')
+     cursor = conn.cursor()
+     cursor.execute("UPDATE users SET age = 26 WHERE name = 'Alice'")
+     conn.commit()
+     print("Data updated")
+     conn.close()
+   Output:
+     Data updated
+
+7. Delete Data:
+   Input:
+     import sqlite3
+     conn = sqlite3.connect('example.db')
+     cursor = conn.cursor()
+     cursor.execute("DELETE FROM users WHERE name = 'Bob'")
+     conn.commit()
+     print("Data deleted")
+     conn.close()
+   Output:
+     Data deleted
+
+8. Transaction:
+   Input:
+     import sqlite3
+     conn = sqlite3.connect('example.db')
+     cursor = conn.cursor()
+     try:
+         cursor.execute("INSERT INTO users (name, age) VALUES (?, ?)", ('Charlie', 35))
+         cursor.execute("INSERT INTO users (name, age) VALUES (?, ?)", ('David', 40))
+         conn.commit()
+         print("Transaction committed")
+     except:
+         conn.rollback()
+         print("Transaction rolled back")
+     conn.close()
+   Output:
+     Transaction committed
+
+9. Parameterized Query:
+   Input:
+     import sqlite3
+     conn = sqlite3.connect('example.db')
+     cursor = conn.cursor()
+     name = 'Eve'
+     age = 28
+     cursor.execute("INSERT INTO users (name, age) VALUES (:name, :age)",
+                   {'name': name, 'age': age})
+     conn.commit()
+     print("Inserted with named parameters")
+     conn.close()
+   Output:
+     Inserted with named parameters
+
+10. Fetch Column Names:
+    Input:
+      import sqlite3
+      conn = sqlite3.connect('example.db')
+      cursor = conn.cursor()
+      cursor.execute("SELECT * FROM users")
+      columns = [desc[0] for desc in cursor.description]
+      print(f"Columns: {columns}")
+      conn.close()
+    Output:
+      Columns: ['id', 'name', 'age']
+
+======================================
+19) IMPORT LOGGING
+======================================
+Definition: Flexible event logging system for application debugging and monitoring.
+
+10 Examples:
+
+1. Basic Logging:
+   Input:
+     import logging
+     logging.basicConfig(level=logging.DEBUG)
+     logging.debug("Debug message")
+     logging.info("Info message")
+     logging.warning("Warning message")
+     logging.error("Error message")
+     logging.critical("Critical message")
+   Output:
+     DEBUG:root:Debug message
+     INFO:root:Info message
+     WARNING:root:Warning message
+     ERROR:root:Error message
+     CRITICAL:root:Critical message
+
+2. Custom Format:
+   Input:
+     import logging
+     logging.basicConfig(
+         level=logging.INFO,
+         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+         datefmt='%Y-%m-%d %H:%M:%S'
+     )
+     logging.info("Custom format message")
+   Output:
+     2024-01-15 14:30:45 - root - INFO - Custom format message
+
+3. Different Levels:
+   Input:
+     import logging
+     logging.basicConfig(level=logging.WARNING)
+     logging.debug("This won't show")
+     logging.info("This won't show")
+     logging.warning("This will show")
+   Output:
+     WARNING:root:This will show
+
+4. File Handler:
+   Input:
+     import logging
+     logging.basicConfig(
+         filename='app.log',
+         level=logging.INFO,
+         format='%(asctime)s - %(message)s'
+     )
+     logging.info("Log message to file")
+     print("Check app.log file")
+   Output (in app.log):
+     2024-01-15 14:30:45,123 - Log message to file
+
+5. Multiple Handlers:
+   Input:
+     import logging
+     logger = logging.getLogger(__name__)
+     logger.setLevel(logging.DEBUG)
+     
+     # Console handler
+     console_handler = logging.StreamHandler()
+     console_handler.setLevel(logging.INFO)
+     
+     # File handler
+     file_handler = logging.FileHandler('debug.log')
+     file_handler.setLevel(logging.DEBUG)
+     
+     # Formatter
+     formatter = logging.Formatter('%(name)s - %(levelname)s - %(message)s')
+     console_handler.setFormatter(formatter)
+     file_handler.setFormatter(formatter)
+     
+     logger.addHandler(console_handler)
+     logger.addHandler(file_handler)
+     
+     logger.debug("Debug to file")
+     logger.info("Info to both")
+   Output (console):
+     __main__ - INFO - Info to both
+   Output (debug.log):
+     __main__ - DEBUG - Debug to file
+     __main__ - INFO - Info to both
+
+6. Log Exceptions:
+   Input:
+     import logging
+     logging.basicConfig(level=logging.ERROR)
+     try:
+         1 / 0
+     except ZeroDivisionError:
+         logging.exception("Exception occurred")
+   Output:
+     ERROR:root:Exception occurred
+     Traceback (most recent call last):
+       File "<stdin>", line 2, in <module>
+     ZeroDivisionError: division by zero
+
+7. Custom Logger:
+   Input:
+     import logging
+     
+     class CustomLogger:
+         def __init__(self, name):
+             self.logger = logging.getLogger(name)
+             self.logger.setLevel(logging.DEBUG)
+             
+             handler = logging.StreamHandler()
+             formatter = logging.Formatter('%(asctime)s - %(name)s - %(message)s')
+             handler.setFormatter(formatter)
+             self.logger.addHandler(handler)
+         
+         def log(self, message):
+             self.logger.info(message)
+     
+     custom = CustomLogger('MyApp')
+     custom.log("Custom logger working")
+   Output:
+     2024-01-15 14:30:45,123 - MyApp - Custom logger working
+
+8. Filter:
+   Input:
+     import logging
+     
+     class InfoFilter(logging.Filter):
+         def filter(self, record):
+             return record.levelno == logging.INFO
+     
+     logger = logging.getLogger(__name__)
+     logger.setLevel(logging.DEBUG)
+     
+     handler = logging.StreamHandler()
+     handler.addFilter(InfoFilter())
+     logger.addHandler(handler)
+     
+     logger.info("This is INFO")
+     logger.debug("This is DEBUG")
+   Output:
+     This is INFO
+
+9. Rotating File Handler:
+   Input:
+     import logging
+     from logging.handlers import RotatingFileHandler
+     
+     handler = RotatingFileHandler('app.log', maxBytes=1000, backupCount=3)
+     handler.setLevel(logging.INFO)
+     
+     logger = logging.getLogger(__name__)
+     logger.setLevel(logging.INFO)
+     logger.addHandler(handler)
+     
+     for i in range(100):
+         logger.info(f"Log message {i}")
+     
+     print("Check rotating log files")
+   Output: Creates app.log, app.log.1, app.log.2, app.log.3
+
+10. Configuration from Dict:
+    Input:
+      import logging.config
+      
+      config = {
+          'version': 1,
+          'handlers': {
+              'console': {
+                  'class': 'logging.StreamHandler',
+                  'level': 'DEBUG',
+                  'formatter': 'simple'
+              }
+          },
+          'formatters': {
+              'simple': {
+                  'format': '%(levelname)s: %(message)s'
+              }
+          },
+          'root': {
+              'level': 'DEBUG',
+              'handlers': ['console']
+          }
+      }
+      
+      logging.config.dictConfig(config)
+      logger = logging.getLogger()
+      logger.info("Configured from dict")
+    Output:
+      INFO: Configured from dict
+
+======================================
+20) IMPORT CSV
+======================================
+Definition: CSV file reading and writing for tabular data import/export.
+
+10 Examples:
+
+1. Write CSV:
+   Input:
+     import csv
+     with open('data.csv', 'w', newline='') as file:
+         writer = csv.writer(file)
+         writer.writerow(['Name', 'Age', 'City'])
+         writer.writerow(['Alice', '25', 'NY'])
+         writer.writerow(['Bob', '30', 'LA'])
+     print("CSV file created")
+   Output (in data.csv):
+     Name,Age,City
+     Alice,25,NY
+     Bob,30,LA
+
+2. Read CSV:
+   Input:
+     import csv
+     with open('data.csv', 'r') as file:
+         reader = csv.reader(file)
+         for row in reader:
+             print(row)
+   Output:
+     ['Name', 'Age', 'City']
+     ['Alice', '25', 'NY']
+     ['Bob', '30', 'LA']
+
+3. Write with DictWriter:
+   Input:
+     import csv
+     with open('people.csv', 'w', newline='') as file:
+         fieldnames = ['first_name', 'last_name', 'email']
+         writer = csv.DictWriter(file, fieldnames=fieldnames)
+         
+         writer.writeheader()
+         writer.writerow({'first_name': 'John', 'last_name': 'Doe', 'email': 'john@example.com'})
+         writer.writerow({'first_name': 'Jane', 'last_name': 'Smith', 'email': 'jane@example.com'})
+     print("DictWriter example created")
+   Output (in people.csv):
+     first_name,last_name,email
+     John,Doe,john@example.com
+     Jane,Smith,jane@example.com
+
+4. Read with DictReader:
+   Input:
+     import csv
+     with open('people.csv', 'r') as file:
+         reader = csv.DictReader(file)
+         for row in reader:
+             print(f"{row['first_name']} {row['last_name']}: {row['email']}")
+   Output:
+     John Doe: john@example.com
+     Jane Smith: jane@example.com
+
+5. Custom Delimiter:
+   Input:
+     import csv
+     with open('pipe.csv', 'w', newline='') as file:
+         writer = csv.writer(file, delimiter='|')
+         writer.writerow(['Product', 'Price', 'Quantity'])
+         writer.writerow(['Apple', '1.99', '100'])
+         writer.writerow(['Banana', '0.99', '200'])
+     print("Pipe-delimited CSV created")
+   Output (in pipe.csv):
+     Product|Price|Quantity
+     Apple|1.99|100
+     Banana|0.99|200
+
+6. Quote Handling:
+   Input:
+     import csv
+     with open('quoted.csv', 'w', newline='') as file:
+         writer = csv.writer(file, quoting=csv.QUOTE_ALL)
+         writer.writerow(['Name', 'Description'])
+         writer.writerow(['Alice', 'Software "Engineer"'])
+         writer.writerow(['Bob', 'Data, Science'])
+     print("Quoted CSV created")
+   Output (in quoted.csv):
+     "Name","Description"
+     "Alice","Software ""Engineer"""
+     "Bob","Data, Science"
+
+7. Read with Different Encoding:
+   Input:
+     import csv
+     # For files with different encodings
+     with open('data.csv', 'r', encoding='utf-8') as file:
+         reader = csv.reader(file)
+         data = list(reader)
+     print(f"Read {len(data)} rows")
+   Output:
+     Read 3 rows
+
+8. Append to CSV:
+   Input:
+     import csv
+     with open('data.csv', 'a', newline='') as file:
+         writer = csv.writer(file)
+         writer.writerow(['Charlie', '35', 'Chicago'])
+     print("Appended to CSV")
+   Output (in data.csv, added line):
+     Charlie,35,Chicago
+
+9. CSV to Dictionary List:
+   Input:
+     import csv
+     with open('people.csv', 'r') as file:
+         reader = csv.DictReader(file)
+         data = list(reader)
+     print(f"CSV as list of dicts: {data}")
+   Output:
+     CSV as list of dicts: [{'first_name': 'John', 'last_name': 'Doe', 'email': 'john@example.com'}, {'first_name': 'Jane', 'last_name': 'Smith', 'email': 'jane@example.com'}]
+
+10. Complex Data:
+    Input:
+      import csv
+      complex_data = [
+          {'id': 1, 'name': 'Product A', 'prices': [10.99, 9.99, 8.99]},
+          {'id': 2, 'name': 'Product B', 'prices': [20.99, 19.99, 18.99]}
+      ]
+      
+      with open('complex.csv', 'w', newline='') as file:
+          writer = csv.writer(file)
+          writer.writerow(['ID', 'Name', 'Price 1', 'Price 2', 'Price 3'])
+          for item in complex_data:
+              writer.writerow([item['id'], item['name']] + item['prices'])
+      
+      print("Complex CSV created")
+    Output (in complex.csv):
+      ID,Name,Price 1,Price 2,Price 3
+      1,Product A,10.99,9.99,8.99
+      2,Product B,20.99,19.99,18.99
+
+================================================================================
